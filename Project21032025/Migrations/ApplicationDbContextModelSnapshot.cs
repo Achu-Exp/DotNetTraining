@@ -7,7 +7,7 @@ using Project21032025.Data;
 
 #nullable disable
 
-namespace Project21032025.Migrations
+namespace LeaveMangementSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
