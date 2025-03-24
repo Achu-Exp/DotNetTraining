@@ -1,0 +1,11 @@
+# Ignore build and temp files
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+project.lock.json
+node_modules/
+packages/
