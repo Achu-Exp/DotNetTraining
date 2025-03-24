@@ -30,14 +30,15 @@ namespace Project21032025.Repositories
             return await _db.LeaveRequests.ToListAsync();
         }
 
-        public Task<LeaveRequest> GetLeaveRequest(int userId)
+        public async Task<LeaveRequest> GetLeaveRequestById(int userId)
         {
-            throw new NotImplementedException();
+            return await _db.LeaveRequests.FindAsync(userId);
         }
 
-        public Task UpdateLeaveRequest(LeaveRequest request)
+        public async Task UpdateLeaveRequest(LeaveRequest request)
         {
-            throw new NotImplementedException();
+            _db.LeaveRequests.Update(request);
+            await _db.SaveChangesAsync();
         }
     }
 }

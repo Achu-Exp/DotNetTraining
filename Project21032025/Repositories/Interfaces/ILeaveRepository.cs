@@ -4,10 +4,10 @@ namespace Project21032025.Repositories.Interfaces
 {
     public interface ILeaveRepository
     {
-        Task <IEnumerable<LeaveRequest>> GetAllLeaveRequests(); //done
-        Task<LeaveRequest> GetLeaveRequest(int userId);
-        Task AddLeaveRequest(LeaveRequest request);
-        Task UpdateLeaveRequest(LeaveRequest request);
+        Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests(); //done
+        Task<LeaveRequest> GetLeaveRequestById(int userId);
+        Task AddLeaveRequest(LeaveRequest request); //done
+        Task UpdateLeaveRequest(LeaveRequest request); //done
         Task DeleteLeaveRequest(int userId);
     }
 }

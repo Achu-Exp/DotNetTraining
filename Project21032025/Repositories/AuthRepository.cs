@@ -21,9 +21,17 @@ namespace Project21032025.Repositories
             secretKey = _configuration.GetValue<string>("ApiSettings:Secret");
         }
 
-        public Task<LoginResponseDTO> LoginUser(LoginRequestDTO loginRequest)
+        public async Task<User> LoginUser(LoginRequestDTO loginRequestDTO)
         {
-            throw new NotImplementedException();
+            User user = _db.Users.FirstOrDefault(x => x.Email == loginRequestDTO.Email);
+            if (user == null)
+            {
+                return null;
+            }
+            else
+            {
+                return user;
+            }
         }
 
         public async Task<UserDTO> RegisterUser(User user)
