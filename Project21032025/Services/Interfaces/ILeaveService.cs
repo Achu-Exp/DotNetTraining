@@ -4,10 +4,10 @@ namespace Project21032025.Services.Interfaces
 {
     public interface ILeaveService
     {
-        Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests();
-        Task<LeaveRequest> GetLeaveRequestById(int id);
-        Task ApplyForLeave(LeaveRequest leaveRequest);
-        Task ApproveLeave(int id);
-        Task RejectLeave(int id);
+        Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests(); //done
+        Task<LeaveRequest> GetLeaveRequestById(int id); //done
+        Task ApplyForLeave(LeaveRequest leaveRequest); //done
+        Task ApproveLeave(int id); //done
+        Task RejectLeave(int id); //done
     }
 }

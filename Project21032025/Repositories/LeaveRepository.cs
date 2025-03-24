@@ -20,9 +20,14 @@ namespace Project21032025.Repositories
             await _db.SaveChangesAsync();
         }
 
-        public Task DeleteLeaveRequest(int userId)
+        public async Task DeleteLeaveRequest(int userId)
         {
-            throw new NotImplementedException();
+            var leaveRequest = await _db.LeaveRequests.FindAsync(userId);
+            if (leaveRequest != null)
+            {
+                _db.LeaveRequests.Remove(leaveRequest);
+                _db.SaveChanges();
+            }
         }
 
         public async Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests()

@@ -25,7 +25,7 @@ namespace Project21032025.Services
 
         public async Task<LeaveRequest> GetLeaveRequestById(int id)
         {
-            throw new NotImplementedException();
+            return await _leaveRepository.GetLeaveRequestById(id);
         }
 
         public async Task ApproveLeave(int id)
