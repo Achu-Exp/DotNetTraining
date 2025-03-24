@@ -11,14 +11,14 @@ namespace Project21032025.Repositories
         private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
-        private string secretKey;
+        private readonly string _secretKey;
 
         public AuthRepository(ApplicationDbContext db, IMapper mapper, IConfiguration configuration)
         {
             _db = db;
             _mapper = mapper;
             _configuration = configuration;
-            secretKey = _configuration.GetValue<string>("ApiSettings:Secret");
+            _secretKey = Environment.GetEnvironmentVariable("API_Secret");
         }
 
         public Task<LoginResponseDTO> LoginUser(LoginRequestDTO loginRequest)
