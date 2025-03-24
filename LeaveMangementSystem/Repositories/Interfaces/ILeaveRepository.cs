@@ -1,6 +1,6 @@
-﻿using Project21032025.Models;
+﻿using LeaveMangementSystem.Models;
 
-namespace Project21032025.Repositories.Interfaces
+namespace LeaveMangementSystem.Repositories.Interfaces
 {
     public interface ILeaveRepository
     {

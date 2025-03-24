@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Project21032025.Models.DTO
+namespace LeaveMangementSystem.Models.DTO
 {
     public class UserDTO
     {

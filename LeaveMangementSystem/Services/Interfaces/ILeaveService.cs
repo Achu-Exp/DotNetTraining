@@ -1,6 +1,6 @@
-﻿using Project21032025.Models;
+﻿using LeaveMangementSystem.Models;
 
-namespace Project21032025.Services.Interfaces
+namespace LeaveMangementSystem.Services.Interfaces
 {
     public interface ILeaveService
     {

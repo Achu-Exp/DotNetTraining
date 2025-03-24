@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Project21032025.Models;
+using LeaveMangementSystem.Models;
 
-namespace Project21032025.Data
+namespace LeaveMangementSystem.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

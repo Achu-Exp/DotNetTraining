@@ -1,4 +1,4 @@
-﻿namespace Project21032025.Models
+﻿namespace LeaveMangementSystem.Models
 {
     public class User
     {

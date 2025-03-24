@@ -3,11 +3,11 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using Project21032025.Models;
-using Project21032025.Models.DTO;
-using Project21032025.Repositories.Interfaces;
+using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Models.DTO;
+using LeaveMangementSystem.Repositories.Interfaces;
 
-namespace Project21032025.Services
+namespace LeaveMangementSystem.Services
 {
     public class AuthService
     {

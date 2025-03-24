@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Project21032025.Models;
-using Project21032025.Models.DTO;
+using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Models.DTO;
 
-namespace Project21032025
+namespace LeaveMangementSystem
 {
     public class MappingConfig : Profile
     {

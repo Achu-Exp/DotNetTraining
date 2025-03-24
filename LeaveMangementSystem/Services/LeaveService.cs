@@ -1,9 +1,9 @@
 ﻿
-using Project21032025.Models;
-using Project21032025.Repositories.Interfaces;
-using Project21032025.Services.Interfaces;
+using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Repositories.Interfaces;
+using LeaveMangementSystem.Services.Interfaces;
 
-namespace Project21032025.Services
+namespace LeaveMangementSystem.Services
 {
     public class LeaveService : ILeaveService
     {

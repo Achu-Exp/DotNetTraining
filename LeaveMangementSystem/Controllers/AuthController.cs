@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project21032025.Models.DTO;
-using Project21032025.Services;
+using LeaveMangementSystem.Models.DTO;
+using LeaveMangementSystem.Services;
 
-namespace Project21032025.Controllers
+namespace LeaveMangementSystem.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Project21032025.Data;
-using Project21032025.Models;
-using Project21032025.Models.DTO;
-using Project21032025.Repositories.Interfaces;
+using LeaveMangementSystem.Data;
+using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Models.DTO;
+using LeaveMangementSystem.Repositories.Interfaces;
 
-namespace Project21032025.Repositories
+namespace LeaveMangementSystem.Repositories
 {
     public class AuthRepository : IAuthRepository
     {

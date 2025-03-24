@@ -3,12 +3,12 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Project21032025;
-using Project21032025.Data;
-using Project21032025.Repositories;
-using Project21032025.Repositories.Interfaces;
-using Project21032025.Services;
-using Project21032025.Services.Interfaces;
+using LeaveMangementSystem;
+using LeaveMangementSystem.Data;
+using LeaveMangementSystem.Repositories;
+using LeaveMangementSystem.Repositories.Interfaces;
+using LeaveMangementSystem.Services;
+using LeaveMangementSystem.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 DotNetEnv.Env.Load();
@@ -23,6 +23,7 @@ builder.Services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =
 builder.Services.AddScoped<ILeaveRepository, LeaveRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddScoped<ILeaveService, LeaveService>();
+builder.Services.AddScoped<LeaveService>();
 builder.Services.AddSwaggerGen(option =>
 {
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Project21032025.Data;
+using LeaveMangementSystem.Data;
 
 #nullable disable
 
@@ -214,7 +214,7 @@ namespace LeaveMangementSystem.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Project21032025.Models.LeaveRequest", b =>
+            modelBuilder.Entity("LeaveMangementSystem.Models.LeaveRequest", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -244,7 +244,7 @@ namespace LeaveMangementSystem.Migrations
                     b.ToTable("LeaveRequests");
                 });
 
-            modelBuilder.Entity("Project21032025.Models.User", b =>
+            modelBuilder.Entity("LeaveMangementSystem.Models.User", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -322,9 +322,9 @@ namespace LeaveMangementSystem.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Project21032025.Models.LeaveRequest", b =>
+            modelBuilder.Entity("LeaveMangementSystem.Models.LeaveRequest", b =>
                 {
-                    b.HasOne("Project21032025.Models.User", "Employee")
+                    b.HasOne("LeaveMangementSystem.Models.User", "Employee")
                         .WithMany()
                         .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)

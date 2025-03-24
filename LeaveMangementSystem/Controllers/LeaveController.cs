@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Project21032025.Models;
-using Project21032025.Services;
+using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Services;
 
-namespace Project21032025.Controllers
+namespace LeaveMangementSystem.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
