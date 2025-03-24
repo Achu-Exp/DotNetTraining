@@ -8,11 +8,11 @@ using Project21032025.Data;
 
 #nullable disable
 
-namespace Project21032025.Migrations
+namespace LeaveMangementSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250324045350_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20250324104524_Initian")]
+    partial class Initian
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
