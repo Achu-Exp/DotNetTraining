@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveMangementSystem.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250325045732_initialmigration")]
-    partial class initialmigration
+    [Migration("20250325051906_InitialCreationChanges")]
+    partial class InitialCreationChanges
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

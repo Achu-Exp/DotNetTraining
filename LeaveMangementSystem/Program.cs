@@ -73,7 +73,7 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
-
+builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddControllers();
