@@ -23,7 +23,7 @@ namespace Project21032025.Controllers
         }
 
         [HttpPost("addLeave")]
-        //[Authorize(Roles = "Employee")]
+        [Authorize(Roles = "Employee")]
         public async Task<IActionResult> ApplyLeave([FromBody] LeaveRequest leaveRequest)
         {
             await _leaveService.ApplyForLeave(leaveRequest);
