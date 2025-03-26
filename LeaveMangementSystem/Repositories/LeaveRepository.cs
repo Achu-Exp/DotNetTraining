@@ -3,22 +3,27 @@ using LeaveMangementSystem.Data;
 using LeaveMangementSystem.Models;
 using LeaveMangementSystem.Repositories.Interfaces;
 using LeaveMangementSystem.Models.DTO;
+using ZstdSharp.Unsafe;
+using AutoMapper;
 
 namespace LeaveMangementSystem.Repositories
 {
     public class LeaveRepository : ILeaveRepository
     {
         private readonly ApplicationDbContext _db;
+        private readonly IMapper _mapper;
 
-        public LeaveRepository(ApplicationDbContext db)
+        public LeaveRepository(ApplicationDbContext db, IMapper mapper)
         {
             _db = db;
+            _mapper = mapper;
         }
 
-        public async Task AddLeaveRequest(LeaveRequest leaveRequest)
+        public async Task AddLeaveRequest(LeaveRequest request)
         {
-            leaveRequest.Status = leaveRequest.Status ?? "Pending"; 
-            await _db.LeaveRequests.AddAsync(leaveRequest);
+            request.Status = request.Status ?? "Pending";
+            
+            await _db.LeaveRequests.AddAsync(request);
             await _db.SaveChangesAsync();
         }
 

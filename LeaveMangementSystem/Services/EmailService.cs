@@ -26,12 +26,9 @@ namespace LeaveMangementSystem.Services
             smtpClient.EnableSsl = true;
             smtpClient.UseDefaultCredentials = false;
 
-
-
             string email = Environment.GetEnvironmentVariable("EMAIL");
             string password = Environment.GetEnvironmentVariable("PASSWORD");
             smtpClient.Credentials = new NetworkCredential(email, password);
-
 
             var message = new MailMessage(email!, receptor, subject, body);
             message.IsBodyHtml = true;

@@ -1,4 +1,6 @@
-﻿namespace LeaveMangementSystem.Models.DTO
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace LeaveMangementSystem.Models.DTO
 {
     public class LeaveRequestDTO
     {
@@ -6,7 +8,6 @@
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string Reason { get; set; }
-
         public string Status { get; set; }
     }
 }

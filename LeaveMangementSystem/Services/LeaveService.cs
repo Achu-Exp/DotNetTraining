@@ -1,17 +1,21 @@
 ﻿
+using AutoMapper;
 using LeaveMangementSystem.Models;
 using LeaveMangementSystem.Models.DTO;
 using LeaveMangementSystem.Repositories.Interfaces;
 using LeaveMangementSystem.Services.Interfaces;
+using Org.BouncyCastle.Asn1.Ocsp;
 
 namespace LeaveMangementSystem.Services
 {
     public class LeaveService : ILeaveService
     {
         private readonly ILeaveRepository _leaveRepository;
-        public LeaveService(ILeaveRepository leaveRepository)
+        private readonly IMapper _mapper;
+        public LeaveService(ILeaveRepository leaveRepository, IMapper mapper)
         {
             _leaveRepository = leaveRepository;
+            _mapper = mapper;
         }
         public async Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests()
         {
@@ -20,17 +24,11 @@ namespace LeaveMangementSystem.Services
 
         public async Task ApplyForLeave(LeaveRequestDTO leaveRequestDto)
         {
-            var leaveRequest = new LeaveRequest
-            {
-                EmployeeId = leaveRequestDto.EmployeeId,
-                StartDate = leaveRequestDto.StartDate,
-                EndDate = leaveRequestDto.EndDate,
-                Reason = leaveRequestDto.Reason,
-                Status = "Pending"  
-            };
-
-            await _leaveRepository.AddLeaveRequest(leaveRequest); 
+            leaveRequestDto.Status = "Pending";
+            var leaveRequest = _mapper.Map<LeaveRequest>(leaveRequestDto);
+            await _leaveRepository.AddLeaveRequest(leaveRequest);
         }
+
         public async Task<LeaveRequest> GetLeaveRequestById(int id)
         {
             return await _leaveRepository.GetLeaveRequestById(id);

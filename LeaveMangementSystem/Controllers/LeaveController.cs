@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using LeaveMangementSystem.Models;
 using LeaveMangementSystem.Services;
 using LeaveMangementSystem.Models.DTO;
+using LeaveMangementSystem.Services.Interfaces;
 
 namespace LeaveMangementSystem.Controllers
 {
@@ -11,9 +12,11 @@ namespace LeaveMangementSystem.Controllers
     public class LeaveController : ControllerBase
     {
         private readonly LeaveService _leaveService;
-        public LeaveController(LeaveService leaveService)
+        private readonly IEmailService _emailService;
+        public LeaveController(LeaveService leaveService, IEmailService emailService)
         {
             _leaveService = leaveService;
+            _emailService = emailService;
         }
 
         [HttpGet("getAllLeaves")]
@@ -23,12 +26,13 @@ namespace LeaveMangementSystem.Controllers
             return Ok(leaves);
         }
 
-        [HttpPost("addLeave")]
-        [Authorize(Roles = "Employee")]
+        [HttpPost("applyleave")]
+        [Authorize(Roles = "Employee, Admin")]
         public async Task<IActionResult> ApplyLeave([FromBody] LeaveRequestDTO leaveRequestDto)
         {
             await _leaveService.ApplyForLeave(leaveRequestDto);
-            return Ok("Applied for leave successfully");
+            await _emailService.SendEmail("shalumurali2000@gmail.com", "Leave request", $"Employee {leaveRequestDto.EmployeeId} applied for leave from {leaveRequestDto.StartDate} to {leaveRequestDto.EndDate}.");
+            return Ok("Applied for leave successfully, email notification send");
         }
 
         [HttpPut("approve/{id}")]
@@ -36,7 +40,7 @@ namespace LeaveMangementSystem.Controllers
         public async Task<IActionResult> ApproveLeave(int id)
         {
             await _leaveService.ApproveLeave(id);
-            return Ok("Leave approed");
+            return Ok("Leave approved");
         }
 
         [HttpPut("reject/{id}")]

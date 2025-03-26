@@ -5,10 +5,10 @@ namespace LeaveMangementSystem.Services.Interfaces
 {
     public interface ILeaveService
     {
-        Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests(); //done
-        Task<LeaveRequest> GetLeaveRequestById(int id); //done
-        Task ApplyForLeave(LeaveRequestDTO leaveRequestDto); //done
-        Task ApproveLeave(int id); //done
-        Task RejectLeave(int id); //done
+        Task<IEnumerable<LeaveRequest>> GetAllLeaveRequests();
+        Task<LeaveRequest> GetLeaveRequestById(int id);
+        Task ApplyForLeave(LeaveRequestDTO leaveRequestDto);
+        Task ApproveLeave(int id);
+        Task RejectLeave(int id);
     }
 }
