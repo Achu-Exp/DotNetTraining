@@ -23,7 +23,7 @@ namespace LeaveMangementSystem.Repositories
 
         public async Task<User> LoginUser(LoginRequestDTO loginRequestDTO)
         {
-            User user = _db.Users.FirstOrDefault(x => x.Email == loginRequestDTO.Email);
+            User user =  _db.Users.FirstOrDefault(x => x.Email == loginRequestDTO.Email);
             if (user == null)
             {
                 return null;

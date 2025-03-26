@@ -8,6 +8,9 @@ namespace LeaveMangementSystem
     {
         public MappingConfig() {
             CreateMap<User, UserDTO>().ReverseMap();
+
+            CreateMap<LeaveRequestDTO, LeaveRequest>()
+               .ForMember(dest => dest.Status, opt => opt.Ignore());
         }
     }
 }

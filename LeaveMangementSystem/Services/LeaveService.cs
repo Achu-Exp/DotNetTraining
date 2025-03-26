@@ -1,5 +1,6 @@
 ﻿
 using LeaveMangementSystem.Models;
+using LeaveMangementSystem.Models.DTO;
 using LeaveMangementSystem.Repositories.Interfaces;
 using LeaveMangementSystem.Services.Interfaces;
 
@@ -17,12 +18,19 @@ namespace LeaveMangementSystem.Services
             return await _leaveRepository.GetAllLeaveRequests();
         }
 
-        public async Task ApplyForLeave(LeaveRequest leaveRequest)
+        public async Task ApplyForLeave(LeaveRequestDTO leaveRequestDto)
         {
-            leaveRequest.Status = "Pending";
-            await _leaveRepository.AddLeaveRequest(leaveRequest);
-        }
+            var leaveRequest = new LeaveRequest
+            {
+                EmployeeId = leaveRequestDto.EmployeeId,
+                StartDate = leaveRequestDto.StartDate,
+                EndDate = leaveRequestDto.EndDate,
+                Reason = leaveRequestDto.Reason,
+                Status = "Pending"  
+            };
 
+            await _leaveRepository.AddLeaveRequest(leaveRequest); 
+        }
         public async Task<LeaveRequest> GetLeaveRequestById(int id)
         {
             return await _leaveRepository.GetLeaveRequestById(id);

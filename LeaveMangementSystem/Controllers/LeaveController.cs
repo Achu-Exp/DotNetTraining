@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using LeaveMangementSystem.Models;
 using LeaveMangementSystem.Services;
+using LeaveMangementSystem.Models.DTO;
 
 namespace LeaveMangementSystem.Controllers
 {
@@ -24,9 +25,9 @@ namespace LeaveMangementSystem.Controllers
 
         [HttpPost("addLeave")]
         [Authorize(Roles = "Employee")]
-        public async Task<IActionResult> ApplyLeave([FromBody] LeaveRequest leaveRequest)
+        public async Task<IActionResult> ApplyLeave([FromBody] LeaveRequestDTO leaveRequestDto)
         {
-            await _leaveService.ApplyForLeave(leaveRequest);
+            await _leaveService.ApplyForLeave(leaveRequestDto);
             return Ok("Applied for leave successfully");
         }
 

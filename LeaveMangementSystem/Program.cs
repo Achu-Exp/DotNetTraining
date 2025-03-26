@@ -24,6 +24,7 @@ builder.Services.AddScoped<ILeaveRepository, LeaveRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
 builder.Services.AddScoped<ILeaveService, LeaveService>();
 builder.Services.AddScoped<LeaveService>();
+
 builder.Services.AddSwaggerGen(option =>
 {
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -73,6 +74,13 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
+    options.AddPolicy("Manager", policy => policy.RequireRole("Manager"));
+    options.AddPolicy("Employee", policy => policy.RequireRole("Employee"));
+});
+
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 builder.Services.AddScoped<AuthService>();

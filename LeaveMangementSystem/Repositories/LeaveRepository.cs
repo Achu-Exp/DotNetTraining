@@ -2,6 +2,7 @@
 using LeaveMangementSystem.Data;
 using LeaveMangementSystem.Models;
 using LeaveMangementSystem.Repositories.Interfaces;
+using LeaveMangementSystem.Models.DTO;
 
 namespace LeaveMangementSystem.Repositories
 {
@@ -14,9 +15,10 @@ namespace LeaveMangementSystem.Repositories
             _db = db;
         }
 
-        public async Task AddLeaveRequest(LeaveRequest request)
+        public async Task AddLeaveRequest(LeaveRequest leaveRequest)
         {
-            await _db.LeaveRequests.AddAsync(request);
+            leaveRequest.Status = leaveRequest.Status ?? "Pending"; 
+            await _db.LeaveRequests.AddAsync(leaveRequest);
             await _db.SaveChangesAsync();
         }
 

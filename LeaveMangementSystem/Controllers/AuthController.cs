@@ -35,7 +35,7 @@ namespace LeaveMangementSystem.Controllers
             }
         }
 
-        [HttpPost("loginuser")]
+        [HttpPost("login")]
         public async Task<IActionResult> LoginUser([FromBody] LoginRequestDTO loginRequestDTO)
         {
             if (!ModelState.IsValid)
