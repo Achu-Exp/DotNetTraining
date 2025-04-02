@@ -10,5 +10,9 @@ project.lock.json
 node_modules/
 packages/
 
+*.jfm
+
+
 .env
 LeaveManagementSystem.Database/LeaveManagementSystem.Database.dbmdl
+LeaveManagementSystem.Database/
