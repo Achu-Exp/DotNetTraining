@@ -5,6 +5,8 @@ using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using LeaveManagement.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using LeaveManagement.Application.Validators;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +39,16 @@ builder.Services.AddScoped<ILeaveRequestService, LeaveRequestService>();
 builder.Services.AddScoped<ILeaveRequestRepository, LeaveRequestRepository>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+builder.Services.AddFluentValidationAutoValidation(); // Enables auto-validation
+
+// Register validators
+builder.Services.AddValidatorsFromAssemblyContaining<UserDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<EmployeeDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<ManagerDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<LoginRequestDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<DepartmentDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<LeaveRequestDtoValidator>(); 
 
 var app = builder.Build();
 
