@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Employees]
+(
+	[Id] INT NOT NULL IDENTITY ,
+    UserId INT NOT NULL,
+    ManagerId INT NULL,
+    CONSTRAINT FK_Employees_User FOREIGN KEY (UserId) REFERENCES Users(Id) ON DELETE CASCADE,
+    CONSTRAINT FK_Employees_Manager FOREIGN KEY (ManagerId) REFERENCES Managers(Id) ON DELETE NO ACTION,
+     CONSTRAINT [PK_Employees] PRIMARY KEY ([Id]),
+)
