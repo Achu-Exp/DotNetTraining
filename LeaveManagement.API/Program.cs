@@ -9,12 +9,15 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using LeaveManagement.Application.Validators;
+using FluentValidation.AspNetCore;
 
 
 DotNetEnv.Env.Load();
 
 var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
 var jwt_Scret = Environment.GetEnvironmentVariable("API_SECRET");
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -120,6 +123,16 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("EmployeePolicy", policy => policy.RequireRole("Employee"));
 });
 
+
+builder.Services.AddFluentValidationAutoValidation(); // Enables auto-validation
+
+// Register validators
+builder.Services.AddValidatorsFromAssemblyContaining<UserDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<EmployeeDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<ManagerDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<LoginRequestDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<DepartmentDtoValidator>(); 
+builder.Services.AddValidatorsFromAssemblyContaining<LeaveRequestDtoValidator>(); 
 
 var app = builder.Build();
 
