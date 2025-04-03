@@ -29,7 +29,7 @@ namespace LeaveManagement.Infrastructure.Repositories
                     e.StartDate,
                     e.EndDate,
                     e.Reason,   
-                    e.Status,   
+                    e.Status.ToString(),   
                     e.EmployeeId,
                     e.ApproverId
                 )
@@ -46,7 +46,7 @@ namespace LeaveManagement.Infrastructure.Repositories
                         e.StartDate,
                         e.EndDate,
                         e.Reason,
-                        e.Status,
+                        e.Status.ToString(),
                         e.EmployeeId,
                         e.ApproverId
 
