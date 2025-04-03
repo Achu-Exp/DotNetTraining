@@ -64,5 +64,21 @@ namespace LeaveManagement.Infrastructure.Repositories
             var entity = _context.LeaveRequests.Remove(leaveRequest);
             return await Task.FromResult(true);
         }
+
+        public async Task<List<LeaveRequestData>> GetLeaveRequestByApprover(int id)
+        {
+            return await _context.LeaveRequests
+           .Where(e => e.ApproverId == id)
+           .Select(e => new LeaveRequestData
+           (
+               e.Id,
+               e.StartDate,
+               e.EndDate,
+               e.Reason,
+               e.Status,
+               e.EmployeeId,
+               e.ApproverId
+           )).ToListAsync();
+        }
     }
 }

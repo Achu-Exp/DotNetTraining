@@ -101,5 +101,39 @@ namespace LeaveManagement.Infrastructure.Repositories
             _context.Employees.Remove(employee);
             return await Task.FromResult(true);
         }
+
+        public async Task<List<EmployeeData>> GetEmployeeByDepartmentId(int id)
+        {
+            return await _context.Employees
+                .Where(e=>e.User.DepartmentId == id)
+                .Select(e=> new EmployeeData(
+                    e.Id,
+                    new UserData(
+                        e.User.Id,
+                        e.User.Name,
+                        e.User.Email,
+                        e.User.Address,
+                        e.User.DepartmentId
+                    ),
+                    e.ManagerId
+                    )).ToListAsync();
+        }
+
+        public async Task<List<EmployeeData>> GetAllEmployeesByManagerId(int id)
+        {
+            return await _context.Employees
+                .Where(e => e.ManagerId == id)
+                .Select(e => new EmployeeData(
+                    e.Id,
+                    new UserData(
+                        e.User.Id,
+                        e.User.Name,
+                        e.User.Email,
+                        e.User.Address,
+                        e.User.DepartmentId
+                    ),
+                    e.ManagerId
+                    )).ToListAsync();
+        }
     }
 }

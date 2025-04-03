@@ -10,6 +10,9 @@ namespace LeaveManagement.Infrastructure.Repositories.Interfaces
         Task<Employee> UpdateAsync(Employee employee);
         Task<bool> DeleteAsync(Employee? employee);
         Task<Employee?> FindAsync(int id);
+        Task<List<EmployeeData>> GetEmployeeByDepartmentId(int id);
+        Task<List<EmployeeData>> GetAllEmployeesByManagerId(int id);
+
 
         //IQueryable<Employee> GetQueryable(Expression<Func<Employee, bool>> expression);
     }

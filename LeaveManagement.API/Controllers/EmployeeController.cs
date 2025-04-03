@@ -56,5 +56,17 @@ namespace LeaveManagement.API.Controllers
             var employeeEntity = await _employeeService.AddEmployeeByAsync(employee);
             return CreatedAtAction(nameof(Create), new { id = employee.Id }, employeeEntity);
         }
+        [HttpGet("employeebymanager")]
+        public async Task<IActionResult> GetEmployeeByManager(int id)
+        {
+            var employees = await _employeeService.GetAllEmployeesByManagerId(id);
+            return Ok(employees);
+        }
+        [HttpGet("employeebydepartment")]
+        public async Task<IActionResult> GetEmployeeByDepartment(int id)
+        {
+            var employees = await _employeeService.GetEmployeeByDepartmentId(id);
+            return Ok(employees);
+        }
     }
 }

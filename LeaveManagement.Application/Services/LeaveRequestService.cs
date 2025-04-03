@@ -81,5 +81,11 @@ namespace LeaveManagement.Application.Services
 
             return true;
         }
+
+        public async Task<List<LeaveRequestDTO>> GetLeaveRequestByApprover(int id)
+        {
+            var leaveRequests = await _leaveRequestRepository.GetLeaveRequestByApprover(id);
+            return _mapper.Map<List<LeaveRequestDTO>>(leaveRequests);
+        }
     }
 }

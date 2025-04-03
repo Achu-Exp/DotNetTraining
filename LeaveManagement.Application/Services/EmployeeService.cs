@@ -30,8 +30,7 @@ namespace LeaveManagement.Application.Services
         public async Task<List<EmployeeDTO>> GetEmployeesAsync()
         {
            var employees = await _employeeRepository.GetAllAsync();
-
-            return _mapper.Map<List<DTO.EmployeeDTO>>(employees);
+           return _mapper.Map<List<DTO.EmployeeDTO>>(employees);
         }
 
         public async Task<EmployeeDTO> UpdateEmployeeAsync(EmployeeDTO employee)
@@ -54,6 +53,18 @@ namespace LeaveManagement.Application.Services
             await _employeeRepository.AddAsync(employeeEntity);
             await _unitOfWork.CompleteAsync();
             return _mapper.Map<DTO.EmployeeDTO>(employeeEntity);
+        }
+
+        public async Task<List<EmployeeDTO>> GetEmployeeByDepartmentId(int id)
+        {
+            var employees = await _employeeRepository.GetEmployeeByDepartmentId(id);
+            return _mapper.Map<List<DTO.EmployeeDTO>>(employees);
+        }
+
+        public async Task<List<EmployeeDTO>> GetAllEmployeesByManagerId(int id)
+        {
+            var employees = await _employeeRepository.GetAllEmployeesByManagerId(id);
+            return _mapper.Map<List<DTO.EmployeeDTO>>(employees);
         }
     }
 }

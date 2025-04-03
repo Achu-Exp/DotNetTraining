@@ -68,5 +68,12 @@ namespace LeaveManagement.API.Controllers
             var value = await _leaveRequestService.DeleteLeaveRequestAsync(Id);
             return Ok(value);
         }
+
+        [HttpGet("leavesbyapprover")]
+        public async Task<IActionResult> GetAllLeavesByApprover(int id)
+        {
+            var leaveRequests = await _leaveRequestService.GetLeaveRequestByApprover(id);
+            return Ok();
+        }
     }
 }
