@@ -14,6 +14,7 @@ namespace LeaveManagement.Infrastructure.Repositories
 
         public async Task AddAsync(User user)
         {
+            user.Password = "experion@123";
             await _context.Users.AddAsync(user);
         }
 

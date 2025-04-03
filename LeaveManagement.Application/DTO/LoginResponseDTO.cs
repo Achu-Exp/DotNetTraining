@@ -2,7 +2,7 @@
 {
     public record LoginResponseDTO
     {
-        public EmployeeDTO User { get; set; }
+        public UserDTO User { get; set; }
         public string Token {  get; set; }
     }
 }

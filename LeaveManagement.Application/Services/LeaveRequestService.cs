@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
+using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
@@ -34,13 +35,13 @@ namespace LeaveManagement.Application.Services
             return _mapper.Map<List<LeaveRequestDTO>>(entity);
         }
 
-        public async Task<LeaveRequestDTO> UpdateLeaveRequestAsync(LeaveRequestDTO leaveRequest)
-        {
-            var leaveRequestEntity = _mapper.Map<Entity.LeaveRequest>(leaveRequest);
-            await _leaveRequestRepository.UpdateAsync(leaveRequestEntity);
-            await _unitOfWork.CompleteAsync();
-            return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
-        }
+        //public async Task<LeaveRequestDTO> UpdateLeaveRequestAsync(LeaveRequestDTO leaveRequest)
+        //{
+        //    var leaveRequestEntity = _mapper.Map<Entity.LeaveRequest>(leaveRequest);
+        //    await _leaveRequestRepository.UpdateAsync(leaveRequestEntity);
+        //    await _unitOfWork.CompleteAsync();
+        //    return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
+        //}
         public async Task<int> DeleteLeaveRequestAsync(int id)
         {
             var leaveRequest = await _leaveRequestRepository.FindAsync(id);
@@ -51,9 +52,34 @@ namespace LeaveManagement.Application.Services
         public async Task<LeaveRequestDTO> AddLeaveRequestByAsync(LeaveRequestDTO leaveRequest)
         {
             var leaveRequestEntity = _mapper.Map<Entity.LeaveRequest>(leaveRequest);
+            leaveRequestEntity.Status = LeaveStatus.Pending;
             await _leaveRequestRepository.AddAsync(leaveRequestEntity);
             await _unitOfWork.CompleteAsync();
             return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
+        }
+
+        public async Task<bool> ApproveLeaveAsync(int id)
+        {
+            LeaveRequest leave = await _leaveRequestRepository.FindAsync(id);
+            if (leave == null) return false;
+
+            leave.Status = LeaveStatus.Approved;
+            await _leaveRequestRepository.UpdateAsync(leave);
+            await _unitOfWork.CompleteAsync();
+
+            return true;
+        }
+
+        public async Task<bool> RejectLeaveAsync(int id)
+        {
+            LeaveRequest leave = await _leaveRequestRepository.FindAsync(id);
+            if (leave == null) return false;
+
+            leave.Status = LeaveStatus.Rejected;
+            await _leaveRequestRepository.UpdateAsync(leave);
+            await _unitOfWork.CompleteAsync();
+
+            return true;
         }
     }
 }

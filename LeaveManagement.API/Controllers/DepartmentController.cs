@@ -1,6 +1,7 @@
 ﻿using LeaveManagement.Application.Services;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.API.Controllers
@@ -17,18 +18,21 @@ namespace LeaveManagement.API.Controllers
         }
 
         [HttpGet("getall")]
+        [Authorize(Roles = "Manager,Admin")]
         public async Task<IActionResult> GetAll()
         {
             var departments = await _departmentService.GetDepartmentsAsync();
             return Ok(departments);
         }
         [HttpGet("getbyid")]
+        [Authorize]
         public async Task<IActionResult> GetById(int Id)
         {
             var departments = await _departmentService.GetDepartmentByIdAsync(Id);
             return Ok(departments);
         }
         [HttpPost("create")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] DepartmentDTO department)
         {
             var departmentEntity = await _departmentService.AddDepartmentByAsync(department);
@@ -36,12 +40,15 @@ namespace LeaveManagement.API.Controllers
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Update([FromBody] DepartmentDTO department)
         {
             var departmentEntity = await _departmentService.UpdateDepartmentAsync(department);
             return Ok(departmentEntity);
         }
         [HttpDelete("delete")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int Id)
         {
             var value = await _departmentService.DeleteDepartmentAsync(Id);
