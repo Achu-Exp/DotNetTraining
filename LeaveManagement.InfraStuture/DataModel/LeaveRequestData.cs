@@ -7,7 +7,7 @@
         DateOnly StartDate,
         DateOnly EndDate,
         string Reason,
-        string Status,
+        LeaveStatus Status,
         int EmployeeId,
         int? ApproverId
 
