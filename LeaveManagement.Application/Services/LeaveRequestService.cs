@@ -3,6 +3,7 @@ using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
+using LeaveManagement.Infrastructure.Repositories;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Application.Services
@@ -12,12 +13,18 @@ namespace LeaveManagement.Application.Services
       
             private readonly IUnitOfWork _unitOfWork;
             private readonly ILeaveRequestRepository _leaveRequestRepository;
+            private readonly IManagerRepository _managerRepository;
+            private readonly IEmployeeRepository _employeeRepository;
+            private readonly IEmailService _emailService;
             private readonly IMapper _mapper;
 
-            public LeaveRequestService(IUnitOfWork unitOfWork, IMapper mapper)
+            public LeaveRequestService(IUnitOfWork unitOfWork, IMapper mapper, IManagerRepository managerRepository, IEmployeeRepository employeeRepository, IEmailService emailService)
             {
                 _unitOfWork = unitOfWork;
                 _leaveRequestRepository = _unitOfWork.LeaveRequests;
+                _managerRepository = managerRepository;
+                _employeeRepository = employeeRepository;
+                _emailService = emailService;
                 _mapper = mapper;
             }
            
@@ -55,6 +62,19 @@ namespace LeaveManagement.Application.Services
             leaveRequestEntity.Status = LeaveStatus.Pending;
             await _leaveRequestRepository.AddAsync(leaveRequestEntity);
             await _unitOfWork.CompleteAsync();
+
+            var approver = await _managerRepository.FindAsync(leaveRequest.ApproverId);
+            var employee = await _employeeRepository.FindAsync(leaveRequest.EmployeeId);
+            if (approver != null)
+            {
+                string subject = "New Leave Request Submitted";
+                string body = $"Dear {approver.User.Name},<br/><br/>" +
+                              $"A new leave request has been submitted by {employee.User.Name}.<br/>" +
+                              $"Please review it at your earliest convenience.<br/><br/>" +
+                              $"Best regards,<br/>Leave Management System";
+
+                await _emailService.SendEmail(approver.User.Email, subject, body);
+            }
             return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
         }
 
@@ -67,6 +87,17 @@ namespace LeaveManagement.Application.Services
             await _leaveRequestRepository.UpdateAsync(leave);
             await _unitOfWork.CompleteAsync();
 
+            var employee = await _employeeRepository.FindAsync(leave.EmployeeId);
+            if (employee != null)
+            {
+                string subject = "Your Leave Request has been Approved";
+                string body = $"Dear {employee.User.Name},<br/><br/>" +
+                              $"Your leave request from {leave.StartDate} to {leave.EndDate} has been approved.<br/>" +
+                              $"Enjoy your time off!<br/><br/>" +
+                              $"Best regards,<br/>Leave Management System";
+
+                await _emailService.SendEmail(employee.User.Email, subject, body);
+            }
             return true;
         }
 
@@ -78,6 +109,18 @@ namespace LeaveManagement.Application.Services
             leave.Status = LeaveStatus.Rejected;
             await _leaveRequestRepository.UpdateAsync(leave);
             await _unitOfWork.CompleteAsync();
+
+            var employee = await _employeeRepository.FindAsync(leave.EmployeeId);
+            if (employee != null)
+            {
+                string subject = "Your Leave Request has been Rejected";
+                string body = $"Dear {employee.User.Name},<br/><br/>" +
+                              $"Unfortunately, your leave request from {leave.StartDate} to {leave.EndDate} has been rejected.<br/>" +
+                              $"If you need further information, please contact your manager.<br/><br/>" +
+                              $"Best regards,<br/>Leave Management System";
+
+                await _emailService.SendEmail(employee.User.Email, subject, body);
+            }
 
             return true;
         }

@@ -1,4 +1,5 @@
-﻿using LeaveManagement.Infrastructure.DataModel;
+﻿using LeaveManagement.Domain.Entities;
+using LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Infrastructure.Repositories
@@ -16,6 +17,7 @@ namespace LeaveManagement.Infrastructure.Repositories
         {
             if (manager.User != null)
             {
+                manager.User.Password = "experion@123";
                 await _context.Users.AddAsync(manager.User);
                 manager.UserId = manager.User.Id;
             }
