@@ -14,37 +14,119 @@ namespace LeaveManagement.API.Controllers
         {
             _managerService = managerService;
         }
-
         [HttpGet("getall")]
         public async Task<IActionResult> GetAll()
         {
-            var managers = await _managerService.GetManagersAsync();
-            return Ok(managers);
+            try
+            {
+                var managers = await _managerService.GetManagersAsync();
+                if (managers == null || !managers.Any())
+                {
+                    return NoContent();
+                }
+                return Ok(managers);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpGet("getbyid")]
         public async Task<IActionResult> GetById(int Id)
         {
-            var managers = await _managerService.GetManagerByIdAsync(Id);
-            return Ok(managers);
+            try
+            {
+                var managers = await _managerService.GetManagerByIdAsync(Id);
+                if (managers == null)
+                {
+                    return NotFound($"Manager with ID {Id} not found");
+                }
+                return Ok(managers);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpPost("create")]
         public async Task<IActionResult> Create([FromBody] ManagerDTO manager)
         {
-            var managerEntity = await _managerService.AddManagerByAsync(manager);
-            return CreatedAtAction(nameof(Create), new { id = manager.Id }, managerEntity);
+            try
+            {
+                if (manager == null)
+                {
+                    return BadRequest("Manager data is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var managerEntity = await _managerService.AddManagerByAsync(manager);
+                return CreatedAtAction(nameof(Create), new { id = manager.Id }, managerEntity);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPut("update")]
         public async Task<IActionResult> Update([FromBody] ManagerDTO manager)
         {
-            var managerEntity = await _managerService.UpdateManagerAsync(manager);
-            return Ok(managerEntity);
+            try
+            {
+                if (manager == null)
+                {
+                    return BadRequest("Manager data is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var managerEntity = await _managerService.UpdateManagerAsync(manager);
+                if (managerEntity == null)
+                {
+                    return NotFound($"Manager with ID {manager.Id} not found");
+                }
+
+                return Ok(managerEntity);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete(int Id)
         {
-            var value = await _managerService.DeleteManagerAsync(Id);
-            return Ok(value);
+            try
+            {
+                var value = await _managerService.DeleteManagerAsync(Id);
+
+                // Assuming DeleteManagerAsync returns an int that indicates affected rows
+                if (value <= 0)
+                {
+                    return NotFound($"Manager with ID {Id} not found or could not be deleted");
+                }
+
+                return Ok(value);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
     }
 }

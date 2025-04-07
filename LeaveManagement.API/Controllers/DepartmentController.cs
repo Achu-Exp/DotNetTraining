@@ -16,44 +16,120 @@ namespace LeaveManagement.API.Controllers
         {
             _departmentService = departmentService;
         }
-
         [HttpGet("getall")]
         [Authorize(Roles = "Manager,Admin")]
         public async Task<IActionResult> GetAll()
         {
-            var departments = await _departmentService.GetDepartmentsAsync();
-            return Ok(departments);
+            try
+            {
+                var departments = await _departmentService.GetDepartmentsAsync();
+                if (departments == null || !departments.Any())
+                {
+                    return NoContent();
+                }
+                return Ok(departments);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpGet("getbyid")]
         [Authorize]
         public async Task<IActionResult> GetById(int Id)
         {
-            var departments = await _departmentService.GetDepartmentByIdAsync(Id);
-            return Ok(departments);
+            try
+            {
+                var departments = await _departmentService.GetDepartmentByIdAsync(Id);
+                if (departments == null)
+                {
+                    return NotFound($"Department with ID {Id} not found");
+                }
+                return Ok(departments);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpPost("create")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] DepartmentDTO department)
         {
-            var departmentEntity = await _departmentService.AddDepartmentByAsync(department);
-            return CreatedAtAction(nameof(Create), new { id = department.Id }, departmentEntity);
+            try
+            {
+                if (department == null)
+                {
+                    return BadRequest("Department data is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var departmentEntity = await _departmentService.AddDepartmentByAsync(department);
+                return CreatedAtAction(nameof(Create), new { id = department.Id }, departmentEntity);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
 
         [HttpPut("update")]
         [Authorize(Roles = "Admin")]
-
         public async Task<IActionResult> Update([FromBody] DepartmentDTO department)
         {
-            var departmentEntity = await _departmentService.UpdateDepartmentAsync(department);
-            return Ok(departmentEntity);
+            try
+            {
+                if (department == null)
+                {
+                    return BadRequest("Department data is null");
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
+
+                var departmentEntity = await _departmentService.UpdateDepartmentAsync(department);
+                if (departmentEntity == null)
+                {
+                    return NotFound($"Department with ID {department.Id} not found");
+                }
+                return Ok(departmentEntity);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
+
         [HttpDelete("delete")]
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int Id)
         {
-            var value = await _departmentService.DeleteDepartmentAsync(Id);
-            return Ok(value);
+            try
+            {
+                var value = await _departmentService.DeleteDepartmentAsync(Id);
+                if (value <= 0)
+                {
+                    return NotFound($"Department with ID {Id} not found or could not be deleted");
+                }
+                return Ok(value);
+            }
+            catch (Exception ex)
+            {
+                // Log the exception
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
         }
-
     }
 }
