@@ -35,23 +35,50 @@ namespace LeaveManagement.Infrastructure.Repositories
         }
 
 
-        public async Task<List<EmployeeData>> GetAllAsync()
+        public async Task<List<EmployeeData>> GetAllAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool isAscending = true, int pageNumber = 1, int pageSize = 1000)
         {
-            return await _context.Employees
+            var employees = _context.Employees
                 .Include(e => e.User)
                 .Select(x => new EmployeeData
                 (
-                    x.Id,
-                    new UserData(  // Assuming you have a UserData DTO
-                        x.User.Id,
-                        x.User.Name,
-                        x.User.Email,
-                        x.User.Address,
-                         x.User.DepartmentId
-                    ),
-                    x.ManagerId
+                 x.Id,
+                 new UserData(
+                     x.User.Id,
+                     x.User.Name,
+                     x.User.Email,
+                     x.User.Address,
+                     x.User.DepartmentId
+                     ),
+                 x.ManagerId
                 ))
-                .ToListAsync();
+                .AsQueryable();
+
+            // Filtering
+            if(!string.IsNullOrEmpty(filterOn) && !string.IsNullOrEmpty(filterQuery))
+            {
+                if(filterOn.Equals("Name", StringComparison.OrdinalIgnoreCase))
+                {
+                    employees = employees.Where(x=>x.User.Name == filterQuery);
+                }
+            }
+
+            //Sorting
+            if(!string.IsNullOrEmpty(sortBy))
+            {
+                if(sortBy.Equals("Name", StringComparison.OrdinalIgnoreCase))
+                {
+                    employees = isAscending ? employees.OrderBy(x=>x.User.Name): employees.OrderByDescending(x=>x.User.Name);
+                }
+                else if(sortBy.Equals("Address", StringComparison.OrdinalIgnoreCase))
+                {
+                    employees = isAscending ? employees.OrderBy(x=>x.User.Address) : employees.OrderByDescending(x => x.User.Address);
+                }
+            }
+
+            // Pagination
+            var skipResults = (pageNumber - 1) * pageSize;
+
+            return await employees.Skip(skipResults).Take(pageSize).ToListAsync();
         }
 
         public async Task<EmployeeData?> GetByIdAsync(int id)

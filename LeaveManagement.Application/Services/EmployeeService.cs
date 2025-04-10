@@ -27,9 +27,9 @@ namespace LeaveManagement.Application.Services
             return _mapper.Map<DTO.EmployeeDTO>(employee);
         }
 
-        public async Task<List<EmployeeDTO>> GetEmployeesAsync()
+        public async Task<List<EmployeeDTO>> GetEmployeesAsync(string? filterOn = null, string? filterQuery = null, string? sortBy = null, bool isAscending = true, int pageNumber = 1, int pageSize = 1000)
         {
-           var employees = await _employeeRepository.GetAllAsync();
+           var employees = await _employeeRepository.GetAllAsync(filterOn, filterQuery, sortBy, isAscending, pageNumber, pageSize);
            return _mapper.Map<List<DTO.EmployeeDTO>>(employees);
         }
 

@@ -36,9 +36,13 @@ namespace LeaveManagement.Application.Services
             return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequest);
         }
 
-        public async Task<List<LeaveRequestDTO>> GetLeaveRequestsAsync()
+        public async Task<List<LeaveRequestDTO>> GetLeaveRequestsAsync(DateOnly? startDate = null,
+            DateOnly? endDate = null, LeaveStatus? status = LeaveStatus.Pending, int? employeeId = null,
+            int? approverId = null, string? sortBy = null, bool isAscending = true,
+            int pageNumber = 1, int pageSize = 100)
         {
-           var entity = await _leaveRequestRepository.GetAllAsync();    
+            var entity = await _leaveRequestRepository.GetAllAsync(startDate, endDate, status, employeeId,
+                approverId, sortBy, isAscending, pageNumber, pageSize);
             return _mapper.Map<List<LeaveRequestDTO>>(entity);
         }
 

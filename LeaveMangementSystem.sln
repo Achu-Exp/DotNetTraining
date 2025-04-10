@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.API", "LeaveManagement.API\LeaveManagement.API.csproj", "{C2519853-E53D-4692-9AF5-32E9887A33F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Test", "LeaveManagement.Test\LeaveManagement.Test.csproj", "{9DAD0023-0445-4C90-AD08-09015ADADB57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,6 +91,18 @@ Global
 		{C2519853-E53D-4692-9AF5-32E9887A33F4}.Release|x64.Build.0 = Release|Any CPU
 		{C2519853-E53D-4692-9AF5-32E9887A33F4}.Release|x86.ActiveCfg = Release|Any CPU
 		{C2519853-E53D-4692-9AF5-32E9887A33F4}.Release|x86.Build.0 = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|x64.Build.0 = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Debug|x86.Build.0 = Debug|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|x64.ActiveCfg = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|x64.Build.0 = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|x86.ActiveCfg = Release|Any CPU
+		{9DAD0023-0445-4C90-AD08-09015ADADB57}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

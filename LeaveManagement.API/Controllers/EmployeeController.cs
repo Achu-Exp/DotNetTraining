@@ -1,5 +1,4 @@
-﻿
-using LeaveManagement.Application.Services;
+﻿using LeaveManagement.Application.Services;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -21,11 +20,14 @@ namespace LeaveManagement.API.Controllers
 
         [HttpGet("getall")]
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] string? filterOn, [FromQuery] string? filterQuery,
+            [FromQuery] string? sortBy, [FromQuery] bool? isAscending, [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 1000)
         {
             try
             {
-                var employees = await _employeeService.GetEmployeesAsync();
+                var employees = await _employeeService.GetEmployeesAsync(filterOn, filterQuery,
+                    sortBy, isAscending?? true, pageNumber, pageSize);
                 if (employees == null || !employees.Any())
                 {
                     return NoContent();
@@ -34,7 +36,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -54,7 +55,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -84,7 +84,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -104,7 +103,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -130,7 +128,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -149,7 +146,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
@@ -168,7 +164,6 @@ namespace LeaveManagement.API.Controllers
             }
             catch (Exception ex)
             {
-                // Log the exception
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
