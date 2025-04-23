@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;

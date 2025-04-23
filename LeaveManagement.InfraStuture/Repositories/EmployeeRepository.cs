@@ -25,8 +25,6 @@ namespace LeaveManagement.Infrastructure.Repositories
             await _context.Employees.AddAsync(employee);
         }
 
-       
-
         public async Task<Employee?> FindAsync(int id)
         {
             return await _context.Employees

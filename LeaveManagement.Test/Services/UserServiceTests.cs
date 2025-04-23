@@ -5,10 +5,8 @@ using LeaveManagement.Infrastructure;
 using DataModel = LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using Entity = LeaveManagement.Domain.Entities;
-
 using Moq;
 using Xunit;
-using LeaveManagement.Application.Services.Interfaces;
 
 namespace LeaveManagement.Test.Services
 {
@@ -58,11 +56,11 @@ namespace LeaveManagement.Test.Services
         public async Task GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists()
         {
             // Arrange
-            var users = new DataModel.UserData(1, "John Doe", "john@gmail.com", "Test address 1", 5);
+            var user = new DataModel.UserData(1, "John Doe", "john@gmail.com", "Test address 1", 5);
 
             var userDtos = new DTO.UserDTO { Id = 1, Name = "John Doe" };
-            _mockUserRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(users);
-            _mockMapper.Setup(m=>m.Map<DTO.UserDTO>(users)).Returns(userDtos);
+            _mockUserRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(user);
+            _mockMapper.Setup(m=>m.Map<DTO.UserDTO>(user)).Returns(userDtos);
 
             // Act
             var result = await _userService.GetUserByIdAsync(1);

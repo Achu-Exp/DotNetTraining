@@ -4,6 +4,7 @@ using DTO = LeaveManagement.Application.DTO;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using LeaveManagement.Infrastructure;
 using DataModel = LeaveManagement.Infrastructure.DataModel;
+using Entity = LeaveManagement.Domain.Entities;
 using Moq;
 using Xunit;
 
@@ -23,7 +24,6 @@ namespace LeaveManagement.Test.Services
             _mockMapper = new Mock<IMapper>();
 
             _mockUnitOfWork.Setup(u => u.Employee).Returns(_mockEmployeeRepository.Object);
-
             _employeeService = new EmployeeService(_mockUnitOfWork.Object, _mockMapper.Object);
         }
 
@@ -89,7 +89,108 @@ namespace LeaveManagement.Test.Services
         public async Task GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists()
         {
             // Arrange
+            var employee = new DataModel.EmployeeData
+                (1,
+                new DataModel.UserData(1, "John Doe", "john@example.com", "Kochi", 101),
+                null
+                );
+            var employeeDto = new DTO.EmployeeDTO
+            {
+                Id = 1,
+                User = new DTO.UserDTO
+                {
+                    Id = 1,
+                    Name = "John Doe",
+                    Email = "john@example.com",
+                    Address = "Kochi",
+                    DepartmentId = 101
+                },
+                ManagerId = null
+            };
 
+            _mockEmployeeRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(employee);
+            _mockMapper.Setup(m=>m.Map<DTO.EmployeeDTO>(employee)).Returns(employeeDto);
+
+            // Act
+            var result = await _employeeService.GetEmployeeByIdAsync(1);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(employeeDto, result);
+        }
+
+        [Fact]
+        public async Task AddEmployeeAsync_ShouldReturnAddedEmployee()
+        {
+            // Arrange
+            var employeeDto = new DTO.EmployeeDTO
+            {
+                Id = 1,
+                User = new DTO.UserDTO
+                {
+                    Id = 1,
+                    Name = "John Doe",
+                    Email = "john@example.com",
+                    Address = "Kochi",
+                    DepartmentId = 101
+                },
+                ManagerId = null
+            };
+            var employeeEntity = new Entity.Employee
+            {
+                Id = 1,
+                UserId = 1,
+                ManagerId = null
+            };
+
+            _mockMapper.Setup(m => m.Map<Entity.Employee>(employeeDto)).Returns(employeeEntity);
+            _mockEmployeeRepository.Setup(repo => repo.AddAsync(employeeEntity)).Returns(Task.CompletedTask);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<DTO.EmployeeDTO>(employeeEntity)).Returns(employeeDto);
+
+            // Act
+            var result = await _employeeService.AddEmployeeByAsync(employeeDto);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(1, result.Id);
+        }
+
+        [Fact]
+        public async Task UpdateEmployeeAsync_ShouldReturnUpdatedEmployee()
+        {
+            // Arrange
+            var employeeDto = new DTO.EmployeeDTO
+            {
+                Id = 1,
+                User = new DTO.UserDTO
+                {
+                    Id = 2,
+                    Name = "John Doe updated",
+                    Email = "john@example.com",
+                    Address = "Kochi",
+                    DepartmentId = 101
+                },
+                ManagerId = null
+            };
+            var employeeEntity = new Entity.Employee
+            {
+                Id = 1,
+                UserId = 2,
+                ManagerId = null
+            };
+
+            _mockMapper.Setup(m => m.Map<Entity.Employee>(employeeDto)).Returns(employeeEntity);
+            _mockEmployeeRepository.Setup(repo => repo.UpdateAsync(employeeEntity)).ReturnsAsync(employeeEntity);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<DTO.EmployeeDTO>(employeeEntity)).Returns(employeeDto);
+
+            // Act
+            var result = await _employeeService.UpdateEmployeeAsync(employeeDto);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal("John Doe updated", result.User.Name);
         }
     }
 }

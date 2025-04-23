@@ -3,14 +3,12 @@ using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
-using LeaveManagement.Infrastructure.Repositories;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Application.Services
 {
     public class LeaveRequestService : ILeaveRequestService
     {
-      
             private readonly IUnitOfWork _unitOfWork;
             private readonly ILeaveRequestRepository _leaveRequestRepository;
             private readonly IManagerRepository _managerRepository;
@@ -18,7 +16,8 @@ namespace LeaveManagement.Application.Services
             private readonly IEmailService _emailService;
             private readonly IMapper _mapper;
 
-            public LeaveRequestService(IUnitOfWork unitOfWork, IMapper mapper, IManagerRepository managerRepository, IEmployeeRepository employeeRepository, IEmailService emailService)
+            public LeaveRequestService(IUnitOfWork unitOfWork, IMapper mapper, IManagerRepository managerRepository,
+                IEmployeeRepository employeeRepository, IEmailService emailService)
             {
                 _unitOfWork = unitOfWork;
                 _leaveRequestRepository = _unitOfWork.LeaveRequests;
@@ -27,12 +26,10 @@ namespace LeaveManagement.Application.Services
                 _emailService = emailService;
                 _mapper = mapper;
             }
-           
 
         public async Task<LeaveRequestDTO> GetLeaveRequestByIdAsync(int id)
         {
             var leaveRequest = await _leaveRequestRepository.GetByIdAsync(id);
-
             return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequest);
         }
 
@@ -53,6 +50,7 @@ namespace LeaveManagement.Application.Services
         //    await _unitOfWork.CompleteAsync();
         //    return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
         //}
+
         public async Task<int> DeleteLeaveRequestAsync(int id)
         {
             var leaveRequest = await _leaveRequestRepository.FindAsync(id);
@@ -79,6 +77,7 @@ namespace LeaveManagement.Application.Services
 
                 await _emailService.SendEmail(approver.User.Email, subject, body);
             }
+
             return _mapper.Map<DTO.LeaveRequestDTO>(leaveRequestEntity);
         }
 
