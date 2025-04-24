@@ -14,15 +14,20 @@ namespace LeaveManagement.Test.Services
     {
         private readonly Mock<IUnitOfWork> _mockUnitOfWork;
         private readonly Mock<IUserRepository> _mockUserRepository;
+        private readonly Mock<IEmployeeRepository> _mockEmployeeRepository;
+        private readonly Mock<IManagerRepository> _mockManagerRepository;
         private readonly Mock<IMapper> _mockMapper;
         private readonly UserService _userService;
         public UserServiceTests()
         {
             _mockUnitOfWork = new Mock<IUnitOfWork>();
             _mockUserRepository = new Mock<IUserRepository>();
+            _mockEmployeeRepository = new Mock<IEmployeeRepository>();
+            _mockManagerRepository = new Mock<IManagerRepository>();
             _mockMapper = new Mock<IMapper>();
             _mockUnitOfWork.Setup(e => e.User).Returns(_mockUserRepository.Object);
-            _userService = new UserService(_mockUnitOfWork.Object, _mockMapper.Object);
+            _userService = new UserService(_mockUnitOfWork.Object, _mockMapper.Object, 
+                _mockEmployeeRepository.Object, _mockManagerRepository.Object);
         }
 
         [Fact]

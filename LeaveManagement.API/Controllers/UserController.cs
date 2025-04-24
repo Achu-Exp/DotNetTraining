@@ -30,7 +30,6 @@ namespace LeaveManagement.API.Controllers
             catch (Exception ex)
             {
                 // Log the exception
-
                 // Return 500 status code for server errors instead of 400 BadRequest
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }

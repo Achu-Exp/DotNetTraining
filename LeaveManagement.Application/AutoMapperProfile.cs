@@ -1,4 +1,7 @@
 ﻿using AutoMapper;
+using LeaveManagement.Application.DTO;
+using LeaveManagement.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace LeaveManagement.Application
 {
@@ -25,7 +28,6 @@ namespace LeaveManagement.Application
             CreateMap<DTO.UserDTO, Entity.User>().ReverseMap();
             CreateMap<UserData, DTO.UserDTO>().ReverseMap();
             CreateMap<UserData, Entity.User>().ReverseMap();
-
 
             CreateMap<LoginRequestData, DTO.LoginRequestDTO>();
             CreateMap<DTO.LoginRequestDTO, LoginRequestData>().ReverseMap();

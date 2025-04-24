@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
+using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
@@ -8,24 +9,51 @@ namespace LeaveManagement.Application.Services
 {
     public class UserService : IUserService
     {
-
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUserRepository _userRepository;
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IManagerRepository _managerRepository;
         private readonly IMapper _mapper;
 
-        public UserService(IUnitOfWork unitOfWork, IMapper mapper)
+        public UserService(IUnitOfWork unitOfWork, IMapper mapper, 
+            IEmployeeRepository employeeRepository, IManagerRepository managerRepository)
         {
             _unitOfWork = unitOfWork;
             _userRepository = _unitOfWork.User;
             _mapper = mapper;
+            _employeeRepository = employeeRepository;
+            _managerRepository = managerRepository;
         }
-        public async Task<UserDTO> AddUserByAsync(UserDTO user)
+
+        public async Task<UserDTO> AddUserByAsync(UserDTO userDto)
         {
-            var userEntity = _mapper.Map<Entity.User>(user);
+            var userEntity = _mapper.Map<User>(userDto);
+            userEntity.Password = "experion@123";
+
             await _userRepository.AddAsync(userEntity);
+
+            if (userDto.Role == UserRole.Employee)
+            {
+                var employee = new Employee
+                {
+                    User = userEntity,
+                    ManagerId = userDto.ManagerId
+                };
+                await _employeeRepository.AddAsync(employee);
+            }
+            else if (userDto.Role == UserRole.Manager)
+            {
+                var manager = new Manager
+                {
+                    User = userEntity
+                };
+                await _managerRepository.AddAsync(manager);
+            }
+
             await _unitOfWork.CompleteAsync();
             return _mapper.Map<UserDTO>(userEntity);
         }
+
 
         public async Task<UserDTO> GetUserByIdAsync(int id)
         {

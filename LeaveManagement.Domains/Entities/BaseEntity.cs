@@ -5,7 +5,6 @@
         public int Id { get; set; }
     }
 
-
     public enum LeaveStatus
     {
         Pending = 1,
@@ -13,8 +12,13 @@
         Rejected = 3
     }
 
+    public enum UserRole
+    {
+        Employee = 1,
+        Manager = 2
+    }
 
 }
-    
+
 
 
