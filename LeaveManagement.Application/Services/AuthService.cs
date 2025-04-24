@@ -38,8 +38,6 @@ namespace LeaveManagement.Application.Services
                 throw new Exception("Invalid email or password.");
             }
 
-         
-
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secretKey);
 

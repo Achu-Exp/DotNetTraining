@@ -11,7 +11,6 @@ namespace LeaveManagement.Infrastructure.Repositories
         {
             _context = context;
         }
-
         public async Task AddAsync(LeaveRequest leaveRequest)
         {
             await _context.LeaveRequests.AddAsync(leaveRequest);

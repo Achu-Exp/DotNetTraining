@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
-using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
-using LeaveManagement.Infrastructure.Repositories;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Application.Services

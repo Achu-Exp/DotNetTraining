@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LeaveManagement.Domain.Entities;
 
 namespace LeaveManagement.Application.DTO
 {
@@ -13,5 +14,7 @@ namespace LeaveManagement.Application.DTO
         public string Email { get; set; }
         public string Address { get; set; }
         public int DepartmentId { get; set; }
+        public UserRole Role { get; set; }
+        public int? ManagerId { get; set; }
     }
 }

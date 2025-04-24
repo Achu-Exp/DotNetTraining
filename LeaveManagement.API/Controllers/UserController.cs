@@ -1,7 +1,4 @@
-﻿using LeaveManagement.Application.Services;
-using LeaveManagement.Application.Services.Interfaces;
-using LeaveManagement.Application.Validators;
-using Microsoft.AspNetCore.Identity;
+﻿using LeaveManagement.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.API.Controllers
@@ -33,7 +30,6 @@ namespace LeaveManagement.API.Controllers
             catch (Exception ex)
             {
                 // Log the exception
-
                 // Return 500 status code for server errors instead of 400 BadRequest
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }

@@ -5,10 +5,8 @@ using LeaveManagement.Infrastructure;
 using DataModel = LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using Entity = LeaveManagement.Domain.Entities;
-
 using Moq;
 using Xunit;
-using LeaveManagement.Application.Services.Interfaces;
 
 namespace LeaveManagement.Test.Services
 {
@@ -16,15 +14,20 @@ namespace LeaveManagement.Test.Services
     {
         private readonly Mock<IUnitOfWork> _mockUnitOfWork;
         private readonly Mock<IUserRepository> _mockUserRepository;
+        private readonly Mock<IEmployeeRepository> _mockEmployeeRepository;
+        private readonly Mock<IManagerRepository> _mockManagerRepository;
         private readonly Mock<IMapper> _mockMapper;
         private readonly UserService _userService;
         public UserServiceTests()
         {
             _mockUnitOfWork = new Mock<IUnitOfWork>();
             _mockUserRepository = new Mock<IUserRepository>();
+            _mockEmployeeRepository = new Mock<IEmployeeRepository>();
+            _mockManagerRepository = new Mock<IManagerRepository>();
             _mockMapper = new Mock<IMapper>();
             _mockUnitOfWork.Setup(e => e.User).Returns(_mockUserRepository.Object);
-            _userService = new UserService(_mockUnitOfWork.Object, _mockMapper.Object);
+            _userService = new UserService(_mockUnitOfWork.Object, _mockMapper.Object, 
+                _mockEmployeeRepository.Object, _mockManagerRepository.Object);
         }
 
         [Fact]
@@ -58,11 +61,11 @@ namespace LeaveManagement.Test.Services
         public async Task GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists()
         {
             // Arrange
-            var users = new DataModel.UserData(1, "John Doe", "john@gmail.com", "Test address 1", 5);
+            var user = new DataModel.UserData(1, "John Doe", "john@gmail.com", "Test address 1", 5);
 
             var userDtos = new DTO.UserDTO { Id = 1, Name = "John Doe" };
-            _mockUserRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(users);
-            _mockMapper.Setup(m=>m.Map<DTO.UserDTO>(users)).Returns(userDtos);
+            _mockUserRepository.Setup(repo => repo.GetByIdAsync(1)).ReturnsAsync(user);
+            _mockMapper.Setup(m=>m.Map<DTO.UserDTO>(user)).Returns(userDtos);
 
             // Act
             var result = await _userService.GetUserByIdAsync(1);

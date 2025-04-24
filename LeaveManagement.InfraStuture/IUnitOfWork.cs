@@ -9,9 +9,6 @@ namespace LeaveManagement.Infrastructure
         IManagerRepository Manager { get; }
         IUserRepository User { get; }
         IDepartmentRepository Department { get; }
-
-
-
         Task<int> CompleteAsync();
     }
 }

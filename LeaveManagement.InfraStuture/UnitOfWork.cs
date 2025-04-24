@@ -7,7 +7,6 @@ namespace LeaveManagement.Infrastructure
     {
 
         private readonly ApplicationDbContext _context;
-
         public ILeaveRequestRepository LeaveRequests { get; }
         public IManagerRepository Manager { get; }
         public IEmployeeRepository Employee { get; }
