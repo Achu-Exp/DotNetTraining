@@ -48,6 +48,10 @@ namespace LeaveManagement.Application.Services
         public async Task<EmployeeDTO> AddEmployeeByAsync(EmployeeDTO employee)
         {
             var employeeEntity = _mapper.Map<Entity.Employee>(employee);
+            if (employeeEntity.User != null)
+            {
+                employeeEntity.User.Password = "experion@123";
+            }
             await _employeeRepository.AddAsync(employeeEntity);
             await _unitOfWork.CompleteAsync();
             return _mapper.Map<DTO.EmployeeDTO>(employeeEntity);

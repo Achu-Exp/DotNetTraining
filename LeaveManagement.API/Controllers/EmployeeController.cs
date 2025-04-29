@@ -132,7 +132,7 @@ namespace LeaveManagement.API.Controllers
             }
         }
 
-        [HttpGet("employeebymanager")]
+        [HttpGet("managerId")]
         public async Task<IActionResult> GetEmployeeByManager(int id)
         {
             try
@@ -140,7 +140,7 @@ namespace LeaveManagement.API.Controllers
                 var employees = await _employeeService.GetAllEmployeesByManagerId(id);
                 if (employees == null || !employees.Any())
                 {
-                    return NoContent();
+                    return Ok(employees);
                 }
                 return Ok(employees);
             }
@@ -150,7 +150,7 @@ namespace LeaveManagement.API.Controllers
             }
         }
 
-        [HttpGet("employeebydepartment")]
+        [HttpGet("departmentId")]
         public async Task<IActionResult> GetEmployeeByDepartment(int id)
         {
             try
@@ -158,7 +158,7 @@ namespace LeaveManagement.API.Controllers
                 var employees = await _employeeService.GetEmployeeByDepartmentId(id);
                 if (employees == null || !employees.Any())
                 {
-                    return NoContent();
+                    return Ok(employees);
                 }
                 return Ok(employees);
             }

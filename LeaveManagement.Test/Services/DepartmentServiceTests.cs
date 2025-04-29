@@ -66,6 +66,21 @@ namespace LeaveManagement.Test.Services
         }
 
         [Fact]
+        public async Task GetDepartmentsAsync_ShouldReturnEmptyList_WhenNoDepartmentsExist()
+        {
+            // Arrange
+            var departments = new List<DataModel.DepartmentData>();  // Empty list
+
+            _mockDepartmentRepository.Setup(repo => repo.GetAllAsync()).ReturnsAsync(departments);
+
+            // Act
+            var result = await _departmentService.GetDepartmentsAsync();
+
+            // Assert
+            Assert.Null(result);
+        }
+
+        [Fact]
         public async Task GetDepartmentByIdAsync_ShouldReturnDepartment_WhenDepartmentExists()
         {
             // Arrange
@@ -88,6 +103,18 @@ namespace LeaveManagement.Test.Services
             // Assert
             Assert.NotNull(result);
             Assert.Equal(departmentDto, result);
+        }
+        [Fact]
+        public async Task GetDepartmentByIdAsync_ShouldReturnNull_WhenDepartmentDoesNotExist()
+        {
+            // Arrange
+            _mockDepartmentRepository.Setup(repo => repo.GetByIdAsync(It.IsAny<int>())).ReturnsAsync((DataModel.DepartmentData)null);
+
+            // Act
+            var result = await _departmentService.GetDepartmentByIdAsync(999); 
+
+            // Assert
+            Assert.Null(result);  
         }
 
         [Fact]
@@ -119,6 +146,32 @@ namespace LeaveManagement.Test.Services
             Assert.NotNull(result);
             Assert.Equal(1, result.Id);
         }
+        [Fact]
+        public async Task AddDepartmentAsync_ShouldThrowException_WhenAddingDepartmentFails()
+        {
+            // Arrange
+            var departmentDto = new DTO.DepartmentDTO { Name = "DU1", Description = "Delivery Unit 1" };
+            var departmentEntity = new Entity.Department { Name = "DU1", Description = "Delivery Unit 1" };
+
+            _mockMapper.Setup(m => m.Map<Entity.Department>(departmentDto)).Returns(departmentEntity);
+            _mockDepartmentRepository.Setup(repo => repo.AddAsync(departmentEntity)).ThrowsAsync(new Exception("Database error"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<Exception>(async () => await _departmentService.AddDepartmentByAsync(departmentDto));
+        }
+        [Fact]
+        public async Task AddDepartmentAsync_ShouldThrowException_WhenDepartmentAlreadyExists()
+        {
+            // Arrange
+            var departmentDto = new DTO.DepartmentDTO { Name = "DU1", Description = "Delivery Unit 1" };
+            var departmentEntity = new Entity.Department { Name = "DU1", Description = "Delivery Unit 1" };
+
+            _mockMapper.Setup(m => m.Map<Entity.Department>(departmentDto)).Returns(departmentEntity);
+            _mockDepartmentRepository.Setup(repo => repo.AddAsync(departmentEntity)).ThrowsAsync(new InvalidOperationException("Department already exists"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<InvalidOperationException>(async () => await _departmentService.AddDepartmentByAsync(departmentDto));
+        }
 
         [Fact]
         public async Task UpdateDepartmentAsync_ShouldReturnUpdatedDepartment()
@@ -138,7 +191,7 @@ namespace LeaveManagement.Test.Services
             };
 
             _mockMapper.Setup(m => m.Map<Entity.Department>(departmentDto)).Returns(departmentEntity);
-            _mockDepartmentRepository.Setup(repo => repo.AddAsync(departmentEntity)).Returns(Task.CompletedTask);
+            _mockDepartmentRepository.Setup(repo => repo.UpdateAsync(departmentEntity)).ReturnsAsync(departmentEntity);
             _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
             _mockMapper.Setup(m => m.Map<DTO.DepartmentDTO>(departmentEntity)).Returns(departmentDto);
 
@@ -148,6 +201,62 @@ namespace LeaveManagement.Test.Services
             // Assert
             Assert.NotNull(result);
             Assert.Equal("DU1", result.Name);
+
+            _mockDepartmentRepository.Verify(e => e.UpdateAsync(departmentEntity), Times.Once);
+            _mockUnitOfWork.Verify(e=>e.CompleteAsync(), Times.Once);
+        }
+        [Fact]
+        public async Task UpdateDepartmentAsync_ShouldThrowException_WhenDepartmentNotFound()
+        {
+            // Arrange
+            var departmentDto = new DTO.DepartmentDTO { Id = 999, Name = "DU1", Description = "Delivery Unit 1" }; 
+            _mockDepartmentRepository.Setup(repo => repo.UpdateAsync(It.IsAny<Entity.Department>())).ThrowsAsync(new KeyNotFoundException("Department not found"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<KeyNotFoundException>(async () => await _departmentService.UpdateDepartmentAsync(departmentDto));
+        }
+
+        [Fact]
+        public async Task DeleteDepartmentAsync_ShouldReturnNumberOfAffectedRows()
+        {
+            var departmentDto = new DTO.DepartmentDTO
+            {
+                Id = 1,
+                Name = "DU1",
+                Description = "Delivery Unit 1"
+            };
+
+            var departmentEntity = new Entity.Department
+            {
+                Name = "DU1",
+                Description = "Delivery Unit 1"
+            };
+
+            _mockDepartmentRepository.Setup(repo => repo.FindAsync(1)).ReturnsAsync(departmentEntity);
+            _mockDepartmentRepository.Setup(repo => repo.DeleteAsync(departmentEntity)).Returns(Task.FromResult(true));
+            _mockUnitOfWork.Setup(e => e.CompleteAsync()).ReturnsAsync(1);
+
+            var result = await _departmentService.DeleteDepartmentAsync(1);
+
+            Assert.Equal(1, result);
+            Assert.True(result > 0);
+
+            _mockDepartmentRepository.Verify(repo => repo.FindAsync(1), Times.Once);
+            _mockDepartmentRepository.Verify(repo => repo.DeleteAsync(departmentEntity), Times.Once);
+            _mockUnitOfWork.Verify(uow => uow.CompleteAsync(), Times.Once);
+
+        }
+        [Fact]
+        public async Task DeleteDepartmentAsync_ShouldThrowException_WhenDeleteFails()
+        {
+            // Arrange
+            var departmentEntity = new Entity.Department { Id = 1, Name = "DU1", Description = "Delivery Unit 1" };
+
+            _mockDepartmentRepository.Setup(repo => repo.FindAsync(It.IsAny<int>())).ReturnsAsync(departmentEntity);
+            _mockDepartmentRepository.Setup(repo => repo.DeleteAsync(It.IsAny<Entity.Department>())).ThrowsAsync(new Exception("Delete operation failed"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<Exception>(async () => await _departmentService.DeleteDepartmentAsync(1));
         }
     }
 }

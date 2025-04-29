@@ -4,9 +4,7 @@ using System.Text;
 using AutoMapper;
 using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services.Interfaces;
-using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 

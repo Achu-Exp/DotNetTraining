@@ -1,0 +1,4732 @@
+{
+  "LeaveManagement.Application.dll": {
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\AutoMapperProfile.cs": {
+      "LeaveManagement.Application.AutoMapperProfile": {
+        "System.Void LeaveManagement.Application.AutoMapperProfile::.ctor()": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\DepartmentDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.DepartmentDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.DepartmentDtoValidator::.ctor()": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\EmployeeDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.EmployeeDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.EmployeeDtoValidator::.ctor()": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\LeaveRequestDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.LeaveRequestDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.LeaveRequestDtoValidator::.ctor()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\LoginRequestDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.LoginRequestDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.LoginRequestDtoValidator::.ctor()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\ManagerDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.ManagerDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.ManagerDtoValidator::.ctor()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Validators\\UserDtoValidator.cs": {
+      "LeaveManagement.Application.Validators.UserDtoValidator": {
+        "System.Void LeaveManagement.Application.Validators.UserDtoValidator::.ctor()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "17": 0,
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\AuthService.cs": {
+      "LeaveManagement.Application.Services.AuthService": {
+        "System.Void LeaveManagement.Application.Services.AuthService::.ctor(LeaveManagement.Infrastructure.Repositories.Interfaces.IAuthRepository,Microsoft.Extensions.Configuration.IConfiguration,AutoMapper.IMapper)": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.AuthService/<LoginUser>d__5": {
+        "System.Void LeaveManagement.Application.Services.AuthService/<LoginUser>d__5::MoveNext()": {
+          "Lines": {
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "39": 0,
+            "40": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0
+          },
+          "Branches": [
+            {
+              "Line": 34,
+              "Offset": 243,
+              "EndOffset": 245,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 34,
+              "Offset": 243,
+              "EndOffset": 257,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\DepartmentService.cs": {
+      "LeaveManagement.Application.Services.DepartmentService": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService::.ctor(LeaveManagement.Infrastructure.IUnitOfWork,AutoMapper.IMapper)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.DepartmentService/<AddDepartmentByAsync>d__4": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService/<AddDepartmentByAsync>d__4::MoveNext()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.DepartmentService/<DeleteDepartmentAsync>d__8": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService/<DeleteDepartmentAsync>d__8::MoveNext()": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.DepartmentService/<GetDepartmentByIdAsync>d__5": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService/<GetDepartmentByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.DepartmentService/<GetDepartmentsAsync>d__6": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService/<GetDepartmentsAsync>d__6::MoveNext()": {
+          "Lines": {
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.DepartmentService/<UpdateDepartmentAsync>d__7": {
+        "System.Void LeaveManagement.Application.Services.DepartmentService/<UpdateDepartmentAsync>d__7::MoveNext()": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\EmailService.cs": {
+      "LeaveManagement.Application.Services.EmailService": {
+        "System.Void LeaveManagement.Application.Services.EmailService::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmailService/<SendEmail>d__2": {
+        "System.Void LeaveManagement.Application.Services.EmailService/<SendEmail>d__2::MoveNext()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 31,
+              "EndOffset": 33,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 31,
+              "EndOffset": 50,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\EmployeeService.cs": {
+      "LeaveManagement.Application.Services.EmployeeService": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService::.ctor(LeaveManagement.Infrastructure.IUnitOfWork,AutoMapper.IMapper)": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<AddEmployeeByAsync>d__8": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<AddEmployeeByAsync>d__8::MoveNext()": {
+          "Lines": {
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<DeleteEmployeeAsync>d__7": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<DeleteEmployeeAsync>d__7::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<GetAllEmployeesByManagerId>d__10": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<GetAllEmployeesByManagerId>d__10::MoveNext()": {
+          "Lines": {
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<GetEmployeeByDepartmentId>d__9": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<GetEmployeeByDepartmentId>d__9::MoveNext()": {
+          "Lines": {
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<GetEmployeeByIdAsync>d__4": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<GetEmployeeByIdAsync>d__4::MoveNext()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<GetEmployeesAsync>d__5": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<GetEmployeesAsync>d__5::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.EmployeeService/<UpdateEmployeeAsync>d__6": {
+        "System.Void LeaveManagement.Application.Services.EmployeeService/<UpdateEmployeeAsync>d__6::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\LeaveRequestService.cs": {
+      "LeaveManagement.Application.Services.LeaveRequestService": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService::.ctor(LeaveManagement.Infrastructure.IUnitOfWork,AutoMapper.IMapper,LeaveManagement.Infrastructure.Repositories.Interfaces.IManagerRepository,LeaveManagement.Infrastructure.Repositories.Interfaces.IEmployeeRepository,LeaveManagement.Application.Services.Interfaces.IEmailService)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<AddLeaveRequestByAsync>d__10": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<AddLeaveRequestByAsync>d__10::MoveNext()": {
+          "Lines": {
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "79": 0,
+            "81": 0,
+            "82": 0
+          },
+          "Branches": [
+            {
+              "Line": 70,
+              "Offset": 624,
+              "EndOffset": 629,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 624,
+              "EndOffset": 945,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<ApproveLeaveAsync>d__11": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<ApproveLeaveAsync>d__11::MoveNext()": {
+          "Lines": {
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0
+          },
+          "Branches": [
+            {
+              "Line": 87,
+              "Offset": 207,
+              "EndOffset": 209,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 207,
+              "EndOffset": 216,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 610,
+              "EndOffset": 615,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 94,
+              "Offset": 610,
+              "EndOffset": 958,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<DeleteLeaveRequestAsync>d__9": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<DeleteLeaveRequestAsync>d__9::MoveNext()": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestByApprover>d__13": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestByApprover>d__13::MoveNext()": {
+          "Lines": {
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestByIdAsync>d__7": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestByIdAsync>d__7::MoveNext()": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestsAsync>d__8": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<GetLeaveRequestsAsync>d__8::MoveNext()": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.LeaveRequestService/<RejectLeaveAsync>d__12": {
+        "System.Void LeaveManagement.Application.Services.LeaveRequestService/<RejectLeaveAsync>d__12::MoveNext()": {
+          "Lines": {
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "125": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0
+          },
+          "Branches": [
+            {
+              "Line": 110,
+              "Offset": 207,
+              "EndOffset": 209,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 207,
+              "EndOffset": 216,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 610,
+              "EndOffset": 615,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 117,
+              "Offset": 610,
+              "EndOffset": 958,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\ManagerService.cs": {
+      "LeaveManagement.Application.Services.ManagerService": {
+        "System.Void LeaveManagement.Application.Services.ManagerService::.ctor(LeaveManagement.Infrastructure.IUnitOfWork,AutoMapper.IMapper)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.ManagerService/<AddManagerByAsync>d__4": {
+        "System.Void LeaveManagement.Application.Services.ManagerService/<AddManagerByAsync>d__4::MoveNext()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.ManagerService/<DeleteManagerAsync>d__5": {
+        "System.Void LeaveManagement.Application.Services.ManagerService/<DeleteManagerAsync>d__5::MoveNext()": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.ManagerService/<GetManagerByIdAsync>d__6": {
+        "System.Void LeaveManagement.Application.Services.ManagerService/<GetManagerByIdAsync>d__6::MoveNext()": {
+          "Lines": {
+            "38": 0,
+            "39": 0,
+            "41": 0,
+            "42": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.ManagerService/<GetManagersAsync>d__7": {
+        "System.Void LeaveManagement.Application.Services.ManagerService/<GetManagersAsync>d__7::MoveNext()": {
+          "Lines": {
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.ManagerService/<UpdateManagerAsync>d__8": {
+        "System.Void LeaveManagement.Application.Services.ManagerService/<UpdateManagerAsync>d__8::MoveNext()": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\Services\\UserService.cs": {
+      "LeaveManagement.Application.Services.UserService": {
+        "System.Void LeaveManagement.Application.Services.UserService::.ctor(LeaveManagement.Infrastructure.IUnitOfWork,AutoMapper.IMapper,LeaveManagement.Infrastructure.Repositories.Interfaces.IEmployeeRepository,LeaveManagement.Infrastructure.Repositories.Interfaces.IManagerRepository)": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.UserService/<AddUserByAsync>d__6": {
+        "System.Void LeaveManagement.Application.Services.UserService/<AddUserByAsync>d__6::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 227,
+              "EndOffset": 232,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 227,
+              "EndOffset": 403,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 421,
+              "EndOffset": 426,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 44,
+              "Offset": 421,
+              "EndOffset": 574,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Application.Services.UserService/<DeleteUserAsync>d__10": {
+        "System.Void LeaveManagement.Application.Services.UserService/<DeleteUserAsync>d__10::MoveNext()": {
+          "Lines": {
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.UserService/<GetUserByIdAsync>d__7": {
+        "System.Void LeaveManagement.Application.Services.UserService/<GetUserByIdAsync>d__7::MoveNext()": {
+          "Lines": {
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.UserService/<GetUsersAsync>d__8": {
+        "System.Void LeaveManagement.Application.Services.UserService/<GetUsersAsync>d__8::MoveNext()": {
+          "Lines": {
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Application.Services.UserService/<UpdateUserAsync>d__9": {
+        "System.Void LeaveManagement.Application.Services.UserService/<UpdateUserAsync>d__9::MoveNext()": {
+          "Lines": {
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "77": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\DepartmentDTO.cs": {
+      "LeaveManagement.Application.DTO.DepartmentDTO": {
+        "System.Int32 LeaveManagement.Application.DTO.DepartmentDTO::get_Id()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.DepartmentDTO::get_Name()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.DepartmentDTO::get_Description()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\EmployeeDTO.cs": {
+      "LeaveManagement.Application.DTO.EmployeeDTO": {
+        "System.Int32 LeaveManagement.Application.DTO.EmployeeDTO::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Application.DTO.UserDTO LeaveManagement.Application.DTO.EmployeeDTO::get_User()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Application.DTO.EmployeeDTO::get_ManagerId()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\LeaveRequestDTO.cs": {
+      "LeaveManagement.Application.DTO.LeaveRequestDTO": {
+        "System.Int32 LeaveManagement.Application.DTO.LeaveRequestDTO::get_Id()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly LeaveManagement.Application.DTO.LeaveRequestDTO::get_StartDate()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly LeaveManagement.Application.DTO.LeaveRequestDTO::get_EndDate()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.LeaveRequestDTO::get_Reason()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.LeaveStatus LeaveManagement.Application.DTO.LeaveRequestDTO::get_Status()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Application.DTO.LeaveRequestDTO::get_EmployeeId()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Application.DTO.LeaveRequestDTO::get_ApproverId()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\LoginRequestDTO.cs": {
+      "LeaveManagement.Application.DTO.LoginRequestDTO": {
+        "System.String LeaveManagement.Application.DTO.LoginRequestDTO::get_Email()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.LoginRequestDTO::get_Password()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\LoginResponseDTO.cs": {
+      "LeaveManagement.Application.DTO.LoginResponseDTO": {
+        "LeaveManagement.Application.DTO.UserDTO LeaveManagement.Application.DTO.LoginResponseDTO::get_User()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.LoginResponseDTO::get_Token()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\ManagerDTO.cs": {
+      "LeaveManagement.Application.DTO.ManagerDTO": {
+        "System.Int32 LeaveManagement.Application.DTO.ManagerDTO::get_Id()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Application.DTO.UserDTO LeaveManagement.Application.DTO.ManagerDTO::get_User()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Application\\DTO\\UserDTO.cs": {
+      "LeaveManagement.Application.DTO.UserDTO": {
+        "System.Int32 LeaveManagement.Application.DTO.UserDTO::get_Id()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.UserDTO::get_Name()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.UserDTO::get_Email()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Application.DTO.UserDTO::get_Address()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Application.DTO.UserDTO::get_DepartmentId()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.UserRole LeaveManagement.Application.DTO.UserDTO::get_Role()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Application.DTO.UserDTO::get_ManagerId()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "LeaveManagement.Domain.dll": {
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\BaseEntity.cs": {
+      "LeaveManagement.Domain.Entities.BaseEntity": {
+        "System.Int32 LeaveManagement.Domain.Entities.BaseEntity::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\Department.cs": {
+      "LeaveManagement.Domain.Entities.Department": {
+        "System.String LeaveManagement.Domain.Entities.Department::get_Name()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Domain.Entities.Department::get_Description()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<LeaveManagement.Domain.Entities.User> LeaveManagement.Domain.Entities.Department::get_Users()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\Employee.cs": {
+      "LeaveManagement.Domain.Entities.Employee": {
+        "System.Int32 LeaveManagement.Domain.Entities.Employee::get_UserId()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.User LeaveManagement.Domain.Entities.Employee::get_User()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Domain.Entities.Employee::get_ManagerId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.Manager LeaveManagement.Domain.Entities.Employee::get_Manager()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<LeaveManagement.Domain.Entities.LeaveRequest> LeaveManagement.Domain.Entities.Employee::get_LeaveRequests()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\LeaveRequest.cs": {
+      "LeaveManagement.Domain.Entities.LeaveRequest": {
+        "System.DateOnly LeaveManagement.Domain.Entities.LeaveRequest::get_StartDate()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly LeaveManagement.Domain.Entities.LeaveRequest::get_EndDate()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Domain.Entities.LeaveRequest::get_Reason()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.LeaveStatus LeaveManagement.Domain.Entities.LeaveRequest::get_Status()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Domain.Entities.LeaveRequest::get_EmployeeId()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.Employee LeaveManagement.Domain.Entities.LeaveRequest::get_Employee()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Domain.Entities.LeaveRequest::get_ApproverId()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.Manager LeaveManagement.Domain.Entities.LeaveRequest::get_Approver()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\Manager.cs": {
+      "LeaveManagement.Domain.Entities.Manager": {
+        "System.Int32 LeaveManagement.Domain.Entities.Manager::get_UserId()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.User LeaveManagement.Domain.Entities.Manager::get_User()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.ICollection`1<LeaveManagement.Domain.Entities.Employee> LeaveManagement.Domain.Entities.Manager::get_Employees()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Domains\\Entities\\User.cs": {
+      "LeaveManagement.Domain.Entities.User": {
+        "System.String LeaveManagement.Domain.Entities.User::get_Name()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Domain.Entities.User::get_Email()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Domain.Entities.User::get_Address()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Domain.Entities.User::get_Password()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Domain.Entities.User::get_DepartmentId()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.Department LeaveManagement.Domain.Entities.User::get_Department()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "LeaveManagement.Infrastructure.dll": {
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\ApplicationDbContext.cs": {
+      "LeaveManagement.Infrastructure.ApplicationDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<LeaveManagement.Domain.Entities.User> LeaveManagement.Infrastructure.ApplicationDbContext::get_Users()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<LeaveManagement.Domain.Entities.Department> LeaveManagement.Infrastructure.ApplicationDbContext::get_Departments()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<LeaveManagement.Domain.Entities.Employee> LeaveManagement.Infrastructure.ApplicationDbContext::get_Employees()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<LeaveManagement.Domain.Entities.LeaveRequest> LeaveManagement.Infrastructure.ApplicationDbContext::get_LeaveRequests()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<LeaveManagement.Domain.Entities.Manager> LeaveManagement.Infrastructure.ApplicationDbContext::get_Managers()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<LeaveManagement.Infrastructure.ApplicationDbContext>)": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\UnitOfWork.cs": {
+      "LeaveManagement.Infrastructure.UnitOfWork": {
+        "LeaveManagement.Infrastructure.Repositories.Interfaces.ILeaveRequestRepository LeaveManagement.Infrastructure.UnitOfWork::get_LeaveRequests()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.Repositories.Interfaces.IManagerRepository LeaveManagement.Infrastructure.UnitOfWork::get_Manager()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.Repositories.Interfaces.IEmployeeRepository LeaveManagement.Infrastructure.UnitOfWork::get_Employee()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.Repositories.Interfaces.IUserRepository LeaveManagement.Infrastructure.UnitOfWork::get_User()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.Repositories.Interfaces.IDepartmentRepository LeaveManagement.Infrastructure.UnitOfWork::get_Department()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.UnitOfWork::Dispose()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.UnitOfWork::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.UnitOfWork/<CompleteAsync>d__17": {
+        "System.Void LeaveManagement.Infrastructure.UnitOfWork/<CompleteAsync>d__17::MoveNext()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\AuthRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.AuthRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.AuthRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext,Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.AuthRepository/<LoginUser>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.AuthRepository/<LoginUser>d__3::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": [
+            {
+              "Line": 23,
+              "Offset": 445,
+              "EndOffset": 447,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 23,
+              "Offset": 445,
+              "EndOffset": 465,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 511,
+              "EndOffset": 513,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 29,
+              "Offset": 511,
+              "EndOffset": 531,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 789,
+              "EndOffset": 791,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 33,
+              "Offset": 789,
+              "EndOffset": 809,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 1067,
+              "EndOffset": 1069,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 37,
+              "Offset": 1067,
+              "EndOffset": 1082,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\DepartmentRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<AddAsync>d__2": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<DeleteAsync>d__7": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<DeleteAsync>d__7::MoveNext()": {
+          "Lines": {
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<FindAsync>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<FindAsync>d__3::MoveNext()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<GetAllAsync>d__4": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<GetByIdAsync>d__5": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<GetByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<UpdateAsync>d__6": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.DepartmentRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\EmployeeRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<AddAsync>d__2": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 45,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 19,
+              "Offset": 45,
+              "EndOffset": 238,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<DeleteAsync>d__7": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<DeleteAsync>d__7::MoveNext()": {
+          "Lines": {
+            "118": 0,
+            "120": 0,
+            "121": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0
+          },
+          "Branches": [
+            {
+              "Line": 120,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 120,
+              "Offset": 40,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 227,
+              "EndOffset": 229,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 124,
+              "Offset": 227,
+              "EndOffset": 259,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<FindAsync>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<FindAsync>d__3::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetAllAsync>d__4": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "77": 0,
+            "79": 0,
+            "80": 0
+          },
+          "Branches": [
+            {
+              "Line": 55,
+              "Offset": 510,
+              "EndOffset": 512,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 510,
+              "EndOffset": 533,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 536,
+              "EndOffset": 541,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 563,
+              "EndOffset": 568,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 57,
+              "Offset": 563,
+              "EndOffset": 705,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 536,
+              "EndOffset": 706,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 724,
+              "EndOffset": 729,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 751,
+              "EndOffset": 756,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 764,
+              "EndOffset": 766,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 764,
+              "EndOffset": 856,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 751,
+              "EndOffset": 955,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 976,
+              "EndOffset": 981,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 989,
+              "EndOffset": 991,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 989,
+              "EndOffset": 1081,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 976,
+              "EndOffset": 1175,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 64,
+              "Offset": 724,
+              "EndOffset": 1176,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetAllEmployeesByManagerId>d__9": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetAllEmployeesByManagerId>d__9::MoveNext()": {
+          "Lines": {
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetByIdAsync>d__5": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetEmployeeByDepartmentId>d__8": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<GetEmployeeByDepartmentId>d__8::MoveNext()": {
+          "Lines": {
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<UpdateAsync>d__6": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.EmployeeRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "104": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0
+          },
+          "Branches": [
+            {
+              "Line": 107,
+              "Offset": 203,
+              "EndOffset": 205,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 107,
+              "Offset": 203,
+              "EndOffset": 319,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\LeaveRequestRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<AddAsync>d__2": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<DeleteAsync>d__7": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<DeleteAsync>d__7::MoveNext()": {
+          "Lines": {
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<FindAsync>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<FindAsync>d__3::MoveNext()": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetAllAsync>d__4": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "83": 0,
+            "85": 0,
+            "86": 0
+          },
+          "Branches": [
+            {
+              "Line": 40,
+              "Offset": 394,
+              "EndOffset": 399,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 40,
+              "Offset": 394,
+              "EndOffset": 547,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 567,
+              "EndOffset": 572,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 45,
+              "Offset": 567,
+              "EndOffset": 720,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 740,
+              "EndOffset": 745,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 50,
+              "Offset": 740,
+              "EndOffset": 917,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 937,
+              "EndOffset": 942,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 55,
+              "Offset": 937,
+              "EndOffset": 1074,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 1094,
+              "EndOffset": 1096,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 60,
+              "Offset": 1094,
+              "EndOffset": 1213,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 1231,
+              "EndOffset": 1236,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 1258,
+              "EndOffset": 1263,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 1271,
+              "EndOffset": 1273,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 70,
+              "Offset": 1271,
+              "EndOffset": 1343,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 68,
+              "Offset": 1258,
+              "EndOffset": 1422,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 1443,
+              "EndOffset": 1448,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 1456,
+              "EndOffset": 1458,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 74,
+              "Offset": 1456,
+              "EndOffset": 1528,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 72,
+              "Offset": 1443,
+              "EndOffset": 1607,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 1628,
+              "EndOffset": 1633,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 1641,
+              "EndOffset": 1643,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 78,
+              "Offset": 1641,
+              "EndOffset": 1713,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 76,
+              "Offset": 1628,
+              "EndOffset": 1787,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 66,
+              "Offset": 1231,
+              "EndOffset": 1788,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetByIdAsync>d__5": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "89": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "99": 0,
+            "100": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetLeaveRequestByApprover>d__8": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<GetLeaveRequestByApprover>d__8::MoveNext()": {
+          "Lines": {
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<UpdateAsync>d__6": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.LeaveRequestRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\ManagerRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<AddAsync>d__2": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": [
+            {
+              "Line": 18,
+              "Offset": 45,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 18,
+              "Offset": 45,
+              "EndOffset": 238,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<DeleteAsync>d__7": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<DeleteAsync>d__7::MoveNext()": {
+          "Lines": {
+            "85": 0,
+            "87": 0,
+            "88": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0
+          },
+          "Branches": [
+            {
+              "Line": 87,
+              "Offset": 40,
+              "EndOffset": 42,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 40,
+              "EndOffset": 49,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 91,
+              "Offset": 227,
+              "EndOffset": 229,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 91,
+              "Offset": 227,
+              "EndOffset": 259,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<FindAsync>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<FindAsync>d__3::MoveNext()": {
+          "Lines": {
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<GetAllAsync>d__4": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<GetByIdAsync>d__5": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<GetByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.ManagerRepository/<UpdateAsync>d__6": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.ManagerRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "72": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": [
+            {
+              "Line": 75,
+              "Offset": 203,
+              "EndOffset": 205,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 75,
+              "Offset": 203,
+              "EndOffset": 291,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Repositories\\UserRepository.cs": {
+      "LeaveManagement.Infrastructure.Repositories.UserRepository": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository::.ctor(LeaveManagement.Infrastructure.ApplicationDbContext)": {
+          "Lines": {
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<AddAsync>d__2": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<AddAsync>d__2::MoveNext()": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<DeleteAsync>d__7": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<DeleteAsync>d__7::MoveNext()": {
+          "Lines": {
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<FindAsync>d__3": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<FindAsync>d__3::MoveNext()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<GetAllAsync>d__4": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<GetAllAsync>d__4::MoveNext()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<GetByIdAsync>d__5": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<GetByIdAsync>d__5::MoveNext()": {
+          "Lines": {
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Infrastructure.Repositories.UserRepository/<UpdateAsync>d__6": {
+        "System.Void LeaveManagement.Infrastructure.Repositories.UserRepository/<UpdateAsync>d__6::MoveNext()": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\DepartmentData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.DepartmentData": {
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.DepartmentData::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.DepartmentData::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.DepartmentData::get_Description()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.DepartmentData::.ctor(System.Int32,System.String,System.String)": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\EmployeeData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.EmployeeData": {
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.EmployeeData::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.DataModel.UserData LeaveManagement.Infrastructure.DataModel.EmployeeData::get_User()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Infrastructure.DataModel.EmployeeData::get_ManagerId()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.EmployeeData::.ctor(System.Int32,LeaveManagement.Infrastructure.DataModel.UserData,System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\LeaveRequestData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.LeaveRequestData": {
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_Id()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_StartDate()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.DateOnly LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_EndDate()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_Reason()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Domain.Entities.LeaveStatus LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_Status()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_EmployeeId()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> LeaveManagement.Infrastructure.DataModel.LeaveRequestData::get_ApproverId()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.LeaveRequestData::.ctor(System.Int32,System.DateOnly,System.DateOnly,System.String,LeaveManagement.Domain.Entities.LeaveStatus,System.Int32,System.Nullable`1<System.Int32>)": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "13": 0,
+            "14": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\LoginRequestData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.LoginRequestData": {
+        "System.String LeaveManagement.Infrastructure.DataModel.LoginRequestData::get_Email()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.LoginRequestData::get_Password()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.LoginRequestData::.ctor(System.String,System.String)": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "13": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\ManagerData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.ManagerData": {
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.ManagerData::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "LeaveManagement.Infrastructure.DataModel.UserData LeaveManagement.Infrastructure.DataModel.ManagerData::get_User()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.ManagerData::.ctor(System.Int32,LeaveManagement.Infrastructure.DataModel.UserData)": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "7": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\DataModel\\UserData.cs": {
+      "LeaveManagement.Infrastructure.DataModel.UserData": {
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.UserData::get_Id()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.UserData::get_Name()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.UserData::get_Email()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String LeaveManagement.Infrastructure.DataModel.UserData::get_Address()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 LeaveManagement.Infrastructure.DataModel.UserData::get_DepartmentId()": {
+          "Lines": {
+            "9": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Infrastructure.DataModel.UserData::.ctor(System.Int32,System.String,System.String,System.String,System.Int32)": {
+          "Lines": {
+            "3": 0,
+            "4": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Configuration\\DepartmentConfig.cs": {
+      "LeaveManagement.Infrastructure.Configuration.DepartmentConfig": {
+        "System.Void LeaveManagement.Infrastructure.Configuration.DepartmentConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<LeaveManagement.Domain.Entities.Department>)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Configuration\\EmployeeConfig.cs": {
+      "LeaveManagement.Infrastructure.Configuration.EmployeeConfig": {
+        "System.Void LeaveManagement.Infrastructure.Configuration.EmployeeConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<LeaveManagement.Domain.Entities.Employee>)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "9": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Configuration\\LeaveRequestConfig.cs": {
+      "LeaveManagement.Infrastructure.Configuration.LeaveRequestConfig": {
+        "System.Void LeaveManagement.Infrastructure.Configuration.LeaveRequestConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<LeaveManagement.Domain.Entities.LeaveRequest>)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "31": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Configuration\\ManagerConfig.cs": {
+      "LeaveManagement.Infrastructure.Configuration.ManagerConfig": {
+        "System.Void LeaveManagement.Infrastructure.Configuration.ManagerConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<LeaveManagement.Domain.Entities.Manager>)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "9": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.InfraStuture\\Configuration\\UserConfig.cs": {
+      "LeaveManagement.Infrastructure.Configuration.UserConfig": {
+        "System.Void LeaveManagement.Infrastructure.Configuration.UserConfig::Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder`1<LeaveManagement.Domain.Entities.User>)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "LeaveManagement.Test.dll": {
+    "C:\\Users\\achu.nair\\.nuget\\packages\\microsoft.net.test.sdk\\17.13.0\\build\\netcoreapp3.1\\Microsoft.NET.Test.Sdk.Program.cs": {
+      "AutoGeneratedProgram": {
+        "System.Void AutoGeneratedProgram::Main(System.String[])": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\AuthServiceTests.cs": {
+      "LeaveManagement.Test.Services.AuthServiceTests": {
+        "System.Void LeaveManagement.Test.Services.AuthServiceTests::.ctor()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.AuthServiceTests/<>c__DisplayClass6_0": {
+        "System.Threading.Tasks.Task LeaveManagement.Test.Services.AuthServiceTests/<>c__DisplayClass6_0::<LoginUser_InvalidCredentials_ShouldThrowException>b__2()": {
+          "Lines": {
+            "70": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.AuthServiceTests/<LoginUser_InvalidCredentials_ShouldThrowException>d__6": {
+        "System.Void LeaveManagement.Test.Services.AuthServiceTests/<LoginUser_InvalidCredentials_ShouldThrowException>d__6::MoveNext()": {
+          "Lines": {
+            "60": 0,
+            "62": 0,
+            "63": 0,
+            "66": 0,
+            "67": 0,
+            "71": 0,
+            "72": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.AuthServiceTests/<LoginUser_ValidCredentials_ShouldReturnTokenAndUser>d__5": {
+        "System.Void LeaveManagement.Test.Services.AuthServiceTests/<LoginUser_ValidCredentials_ShouldReturnTokenAndUser>d__5::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "50": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\DepartmentServiceTests.cs": {
+      "LeaveManagement.Test.Services.DepartmentServiceTests": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests::.ctor()": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<<DeleteDepartmentAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<<DeleteDepartmentAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d::MoveNext()": {
+          "Lines": {
+            "259": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass10_0/<<AddDepartmentAsync_ShouldThrowException_WhenAddingDepartmentFails>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass10_0/<<AddDepartmentAsync_ShouldThrowException_WhenAddingDepartmentFails>b__2>d::MoveNext()": {
+          "Lines": {
+            "160": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass11_0/<<AddDepartmentAsync_ShouldThrowException_WhenDepartmentAlreadyExists>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass11_0/<<AddDepartmentAsync_ShouldThrowException_WhenDepartmentAlreadyExists>b__2>d::MoveNext()": {
+          "Lines": {
+            "173": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass13_0/<<UpdateDepartmentAsync_ShouldThrowException_WhenDepartmentNotFound>b__1>d": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<>c__DisplayClass13_0/<<UpdateDepartmentAsync_ShouldThrowException_WhenDepartmentNotFound>b__1>d::MoveNext()": {
+          "Lines": {
+            "216": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldReturnAddedDepartment>d__9": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldReturnAddedDepartment>d__9::MoveNext()": {
+          "Lines": {
+            "122": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "143": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldThrowException_WhenAddingDepartmentFails>d__10": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldThrowException_WhenAddingDepartmentFails>d__10::MoveNext()": {
+          "Lines": {
+            "151": 0,
+            "153": 0,
+            "154": 0,
+            "156": 0,
+            "157": 0,
+            "161": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldThrowException_WhenDepartmentAlreadyExists>d__11": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<AddDepartmentAsync_ShouldThrowException_WhenDepartmentAlreadyExists>d__11::MoveNext()": {
+          "Lines": {
+            "164": 0,
+            "166": 0,
+            "167": 0,
+            "169": 0,
+            "170": 0,
+            "174": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<DeleteDepartmentAsync_ShouldReturnNumberOfAffectedRows>d__14": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<DeleteDepartmentAsync_ShouldReturnNumberOfAffectedRows>d__14::MoveNext()": {
+          "Lines": {
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "239": 0,
+            "241": 0,
+            "242": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "248": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<DeleteDepartmentAsync_ShouldThrowException_WhenDeleteFails>d__15": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<DeleteDepartmentAsync_ShouldThrowException_WhenDeleteFails>d__15::MoveNext()": {
+          "Lines": {
+            "251": 0,
+            "253": 0,
+            "255": 0,
+            "256": 0,
+            "260": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentAsync_ShouldReturnListOfDepartments>d__5": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentAsync_ShouldReturnListOfDepartments>d__5::MoveNext()": {
+          "Lines": {
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "56": 0,
+            "57": 0,
+            "60": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0
+          },
+          "Branches": [
+            {
+              "Line": 65,
+              "Offset": 592,
+              "EndOffset": 594,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 592,
+              "EndOffset": 598,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentByIdAsync_ShouldReturnDepartment_WhenDepartmentExists>d__7": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentByIdAsync_ShouldReturnDepartment_WhenDepartmentExists>d__7::MoveNext()": {
+          "Lines": {
+            "85": 0,
+            "87": 0,
+            "88": 0,
+            "90": 0,
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "94": 0,
+            "95": 0,
+            "97": 0,
+            "98": 0,
+            "101": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentByIdAsync_ShouldReturnNull_WhenDepartmentDoesNotExist>d__8": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentByIdAsync_ShouldReturnNull_WhenDepartmentDoesNotExist>d__8::MoveNext()": {
+          "Lines": {
+            "109": 0,
+            "111": 0,
+            "114": 0,
+            "117": 0,
+            "118": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentsAsync_ShouldReturnEmptyList_WhenNoDepartmentsExist>d__6": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<GetDepartmentsAsync_ShouldReturnEmptyList_WhenNoDepartmentsExist>d__6::MoveNext()": {
+          "Lines": {
+            "70": 0,
+            "72": 0,
+            "74": 0,
+            "77": 0,
+            "80": 0,
+            "81": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<UpdateDepartmentAsync_ShouldReturnUpdatedDepartment>d__12": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<UpdateDepartmentAsync_ShouldReturnUpdatedDepartment>d__12::MoveNext()": {
+          "Lines": {
+            "178": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "199": 0,
+            "202": 0,
+            "203": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.DepartmentServiceTests/<UpdateDepartmentAsync_ShouldThrowException_WhenDepartmentNotFound>d__13": {
+        "System.Void LeaveManagement.Test.Services.DepartmentServiceTests/<UpdateDepartmentAsync_ShouldThrowException_WhenDepartmentNotFound>d__13::MoveNext()": {
+          "Lines": {
+            "210": 0,
+            "212": 0,
+            "213": 0,
+            "217": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\EmployeeServiceTests.cs": {
+      "LeaveManagement.Test.Services.EmployeeServiceTests": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests::.ctor()": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<<DeleteEmployeeAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<<DeleteEmployeeAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d::MoveNext()": {
+          "Lines": {
+            "362": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass10_0/<<AddEmployeeAsync_ShouldThrowException_WhenAddingEmployeeFails>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass10_0/<<AddEmployeeAsync_ShouldThrowException_WhenAddingEmployeeFails>b__2>d::MoveNext()": {
+          "Lines": {
+            "219": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass11_0/<<AddEmployeeAsync_ShouldThrowException_WhenEmployeeAlreadyExists>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass11_0/<<AddEmployeeAsync_ShouldThrowException_WhenEmployeeAlreadyExists>b__2>d::MoveNext()": {
+          "Lines": {
+            "249": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass13_0/<<UpdateEmployeeAsync_ShouldThrowException_WhenEmployeeNotFound>b__1>d": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass13_0/<<UpdateEmployeeAsync_ShouldThrowException_WhenEmployeeNotFound>b__1>d::MoveNext()": {
+          "Lines": {
+            "311": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass17_0": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<>c__DisplayClass17_0::<GetAllEmployeessByManagerId_InputManagerIdInt_ShouldReturnListOfEmployess>b__2(LeaveManagement.Application.DTO.EmployeeDTO)": {
+          "Lines": {
+            "466": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldReturnAddedEmployee>d__9": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldReturnAddedEmployee>d__9::MoveNext()": {
+          "Lines": {
+            "155": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0,
+            "169": 0,
+            "170": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0,
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0,
+            "183": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldThrowException_WhenAddingEmployeeFails>d__10": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldThrowException_WhenAddingEmployeeFails>d__10::MoveNext()": {
+          "Lines": {
+            "193": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "200": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0,
+            "205": 0,
+            "206": 0,
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "215": 0,
+            "216": 0,
+            "220": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldThrowException_WhenEmployeeAlreadyExists>d__11": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<AddEmployeeAsync_ShouldThrowException_WhenEmployeeAlreadyExists>d__11::MoveNext()": {
+          "Lines": {
+            "223": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "245": 0,
+            "246": 0,
+            "250": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<DeleteEmployeeAsync_ShouldReturnNumberOfAffectedRows>d__14": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<DeleteEmployeeAsync_ShouldReturnNumberOfAffectedRows>d__14::MoveNext()": {
+          "Lines": {
+            "316": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "321": 0,
+            "322": 0,
+            "323": 0,
+            "324": 0,
+            "325": 0,
+            "326": 0,
+            "327": 0,
+            "328": 0,
+            "329": 0,
+            "330": 0,
+            "331": 0,
+            "332": 0,
+            "333": 0,
+            "334": 0,
+            "335": 0,
+            "336": 0,
+            "338": 0,
+            "339": 0,
+            "340": 0,
+            "343": 0,
+            "346": 0,
+            "347": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<DeleteEmployeeAsync_ShouldThrowException_WhenDeleteFails>d__15": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<DeleteEmployeeAsync_ShouldThrowException_WhenDeleteFails>d__15::MoveNext()": {
+          "Lines": {
+            "350": 0,
+            "352": 0,
+            "353": 0,
+            "354": 0,
+            "355": 0,
+            "356": 0,
+            "357": 0,
+            "358": 0,
+            "359": 0,
+            "363": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetAllEmployeessByManagerId_InputManagerIdInt_ShouldReturnListOfEmployess>d__17": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetAllEmployeessByManagerId_InputManagerIdInt_ShouldReturnListOfEmployess>d__17::MoveNext()": {
+          "Lines": {
+            "411": 0,
+            "412": 0,
+            "413": 0,
+            "414": 0,
+            "415": 0,
+            "416": 0,
+            "417": 0,
+            "418": 0,
+            "419": 0,
+            "420": 0,
+            "421": 0,
+            "422": 0,
+            "423": 0,
+            "425": 0,
+            "426": 0,
+            "427": 0,
+            "428": 0,
+            "429": 0,
+            "430": 0,
+            "431": 0,
+            "432": 0,
+            "433": 0,
+            "434": 0,
+            "435": 0,
+            "436": 0,
+            "437": 0,
+            "438": 0,
+            "439": 0,
+            "440": 0,
+            "441": 0,
+            "442": 0,
+            "443": 0,
+            "444": 0,
+            "445": 0,
+            "446": 0,
+            "447": 0,
+            "448": 0,
+            "449": 0,
+            "450": 0,
+            "451": 0,
+            "452": 0,
+            "453": 0,
+            "455": 0,
+            "456": 0,
+            "459": 0,
+            "462": 0,
+            "463": 0,
+            "464": 0,
+            "465": 0,
+            "467": 0,
+            "468": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByDepartmentId_WithSingleEmployee_ReturnsCorrectEmployee>d__16": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByDepartmentId_WithSingleEmployee_ReturnsCorrectEmployee>d__16::MoveNext()": {
+          "Lines": {
+            "367": 0,
+            "369": 0,
+            "371": 0,
+            "372": 0,
+            "373": 0,
+            "374": 0,
+            "375": 0,
+            "376": 0,
+            "377": 0,
+            "379": 0,
+            "380": 0,
+            "381": 0,
+            "382": 0,
+            "383": 0,
+            "384": 0,
+            "385": 0,
+            "386": 0,
+            "387": 0,
+            "388": 0,
+            "389": 0,
+            "390": 0,
+            "391": 0,
+            "392": 0,
+            "393": 0,
+            "394": 0,
+            "396": 0,
+            "397": 0,
+            "400": 0,
+            "403": 0,
+            "404": 0,
+            "405": 0,
+            "406": 0,
+            "407": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists>d__7": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists>d__7::MoveNext()": {
+          "Lines": {
+            "108": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "129": 0,
+            "130": 0,
+            "133": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByIdAsync_ShouldReturnNull_WhenEmployeeDoesNotExist>d__8": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeeByIdAsync_ShouldReturnNull_WhenEmployeeDoesNotExist>d__8::MoveNext()": {
+          "Lines": {
+            "142": 0,
+            "144": 0,
+            "147": 0,
+            "150": 0,
+            "151": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeesAsync_ShouldReturnEmptyList_WhenNoEmployeesExist>d__6": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeesAsync_ShouldReturnEmptyList_WhenNoEmployeesExist>d__6::MoveNext()": {
+          "Lines": {
+            "92": 0,
+            "94": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "103": 0,
+            "104": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeesAsync_ShouldReturnListOfEmployees>d__5": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<GetEmployeesAsync_ShouldReturnListOfEmployees>d__5::MoveNext()": {
+          "Lines": {
+            "34": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "78": 0,
+            "79": 0,
+            "82": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "88": 0
+          },
+          "Branches": [
+            {
+              "Line": 87,
+              "Offset": 883,
+              "EndOffset": 885,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 87,
+              "Offset": 883,
+              "EndOffset": 889,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<UpdateEmployeeAsync_ShouldReturnUpdatedEmployee>d__12": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<UpdateEmployeeAsync_ShouldReturnUpdatedEmployee>d__12::MoveNext()": {
+          "Lines": {
+            "255": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0,
+            "271": 0,
+            "272": 0,
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "283": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.EmployeeServiceTests/<UpdateEmployeeAsync_ShouldThrowException_WhenEmployeeNotFound>d__13": {
+        "System.Void LeaveManagement.Test.Services.EmployeeServiceTests/<UpdateEmployeeAsync_ShouldThrowException_WhenEmployeeNotFound>d__13::MoveNext()": {
+          "Lines": {
+            "292": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "297": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0,
+            "308": 0,
+            "312": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\LeaveRequestServiceTests.cs": {
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests::.ctor()": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<>c": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<>c::<GetLeaveRequestByApprover_InputApproverId_ShouldReturnListOfLeaveRequests>b__20_3(LeaveManagement.Application.DTO.LeaveRequestDTO)": {
+          "Lines": {
+            "500": 0
+          },
+          "Branches": []
+        },
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<>c::<GetLeaveRequestByApprover_InputApproverId_ShouldReturnListOfLeaveRequests>b__20_4(LeaveManagement.Application.DTO.LeaveRequestDTO)": {
+          "Lines": {
+            "501": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<>c__DisplayClass20_0": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<>c__DisplayClass20_0::<GetLeaveRequestByApprover_InputApproverId_ShouldReturnListOfLeaveRequests>b__2(LeaveManagement.Application.DTO.LeaveRequestDTO)": {
+          "Lines": {
+            "498": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<AddLeaveRequestAsync_ShouldReturnAddedLeaveRequest>d__10": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<AddLeaveRequestAsync_ShouldReturnAddedLeaveRequest>d__10::MoveNext()": {
+          "Lines": {
+            "138": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "158": 0,
+            "159": 0,
+            "160": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "168": 0,
+            "171": 0,
+            "172": 0,
+            "173": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_EmployeeNotFound_ShouldNotSendEmail>d__16": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_EmployeeNotFound_ShouldNotSendEmail>d__16::MoveNext()": {
+          "Lines": {
+            "310": 0,
+            "311": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0,
+            "316": 0,
+            "317": 0,
+            "318": 0,
+            "319": 0,
+            "320": 0,
+            "322": 0,
+            "323": 0,
+            "324": 0,
+            "325": 0,
+            "327": 0,
+            "329": 0,
+            "330": 0,
+            "331": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_LeaveNotFound_ShouldReturnFalse>d__13": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_LeaveNotFound_ShouldReturnFalse>d__13::MoveNext()": {
+          "Lines": {
+            "255": 0,
+            "256": 0,
+            "258": 0,
+            "260": 0,
+            "261": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_ShouldReturnTruet>d__11": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_ShouldReturnTruet>d__11::MoveNext()": {
+          "Lines": {
+            "177": 0,
+            "179": 0,
+            "180": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "193": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0,
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "205": 0,
+            "206": 0,
+            "208": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_ShouldSendApprovalEmail>d__15": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<ApproveLeaveRequestAsync_ShouldSendApprovalEmail>d__15::MoveNext()": {
+          "Lines": {
+            "275": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "287": 0,
+            "288": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "293": 0,
+            "294": 0,
+            "295": 0,
+            "296": 0,
+            "298": 0,
+            "300": 0,
+            "301": 0,
+            "302": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "306": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<DeleteLeaveRequestAsync_ShouldReturnNumberOfAffectedRows>d__19": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<DeleteLeaveRequestAsync_ShouldReturnNumberOfAffectedRows>d__19::MoveNext()": {
+          "Lines": {
+            "395": 0,
+            "396": 0,
+            "397": 0,
+            "398": 0,
+            "399": 0,
+            "400": 0,
+            "401": 0,
+            "402": 0,
+            "403": 0,
+            "404": 0,
+            "405": 0,
+            "407": 0,
+            "408": 0,
+            "409": 0,
+            "410": 0,
+            "411": 0,
+            "412": 0,
+            "413": 0,
+            "414": 0,
+            "415": 0,
+            "416": 0,
+            "418": 0,
+            "419": 0,
+            "420": 0,
+            "422": 0,
+            "424": 0,
+            "425": 0,
+            "427": 0,
+            "428": 0,
+            "429": 0,
+            "430": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestAsync_ShouldReturnListOfLeaveRequests>d__8": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestAsync_ShouldReturnListOfLeaveRequests>d__8::MoveNext()": {
+          "Lines": {
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0,
+            "79": 0,
+            "80": 0,
+            "81": 0,
+            "82": 0,
+            "83": 0,
+            "84": 0,
+            "85": 0,
+            "86": 0,
+            "87": 0,
+            "89": 0,
+            "90": 0,
+            "92": 0,
+            "94": 0,
+            "95": 0,
+            "96": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByApprover_InputApproverId_ShouldReturnListOfLeaveRequests>d__20": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByApprover_InputApproverId_ShouldReturnListOfLeaveRequests>d__20::MoveNext()": {
+          "Lines": {
+            "434": 0,
+            "436": 0,
+            "438": 0,
+            "439": 0,
+            "440": 0,
+            "441": 0,
+            "442": 0,
+            "443": 0,
+            "444": 0,
+            "445": 0,
+            "446": 0,
+            "447": 0,
+            "448": 0,
+            "449": 0,
+            "450": 0,
+            "451": 0,
+            "452": 0,
+            "453": 0,
+            "454": 0,
+            "455": 0,
+            "456": 0,
+            "457": 0,
+            "458": 0,
+            "460": 0,
+            "461": 0,
+            "462": 0,
+            "463": 0,
+            "464": 0,
+            "465": 0,
+            "466": 0,
+            "467": 0,
+            "468": 0,
+            "469": 0,
+            "470": 0,
+            "471": 0,
+            "472": 0,
+            "473": 0,
+            "474": 0,
+            "475": 0,
+            "476": 0,
+            "477": 0,
+            "478": 0,
+            "479": 0,
+            "480": 0,
+            "481": 0,
+            "482": 0,
+            "484": 0,
+            "485": 0,
+            "486": 0,
+            "488": 0,
+            "489": 0,
+            "490": 0,
+            "493": 0,
+            "496": 0,
+            "497": 0,
+            "499": 0,
+            "502": 0,
+            "503": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByApprover_NoRequests_ShouldReturnEmptyList>d__21": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByApprover_NoRequests_ShouldReturnEmptyList>d__21::MoveNext()": {
+          "Lines": {
+            "507": 0,
+            "508": 0,
+            "510": 0,
+            "511": 0,
+            "512": 0,
+            "514": 0,
+            "515": 0,
+            "516": 0,
+            "518": 0,
+            "520": 0,
+            "521": 0,
+            "522": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByIdAsync_ShouldReturnLeaveRequest_WhenLeaveRequestExists>d__9": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<GetLeaveRequestByIdAsync_ShouldReturnLeaveRequest_WhenLeaveRequestExists>d__9::MoveNext()": {
+          "Lines": {
+            "101": 0,
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "125": 0,
+            "126": 0,
+            "129": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_EmployeeNotFound_ShouldNotSendEmail>d__18": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_EmployeeNotFound_ShouldNotSendEmail>d__18::MoveNext()": {
+          "Lines": {
+            "370": 0,
+            "371": 0,
+            "372": 0,
+            "373": 0,
+            "374": 0,
+            "375": 0,
+            "376": 0,
+            "377": 0,
+            "378": 0,
+            "379": 0,
+            "380": 0,
+            "382": 0,
+            "383": 0,
+            "384": 0,
+            "385": 0,
+            "387": 0,
+            "389": 0,
+            "390": 0,
+            "391": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_LeaveNotFound_ShouldReturnFalse>d__14": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_LeaveNotFound_ShouldReturnFalse>d__14::MoveNext()": {
+          "Lines": {
+            "265": 0,
+            "266": 0,
+            "268": 0,
+            "270": 0,
+            "271": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_ShouldReturnTrue>d__12": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_ShouldReturnTrue>d__12::MoveNext()": {
+          "Lines": {
+            "216": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "244": 0,
+            "245": 0,
+            "247": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_ShouldSendRejectedMailEmail>d__17": {
+        "System.Void LeaveManagement.Test.Services.LeaveRequestServiceTests/<RejectLeaveRequestAsync_ShouldSendRejectedMailEmail>d__17::MoveNext()": {
+          "Lines": {
+            "335": 0,
+            "336": 0,
+            "337": 0,
+            "338": 0,
+            "339": 0,
+            "340": 0,
+            "341": 0,
+            "342": 0,
+            "343": 0,
+            "344": 0,
+            "345": 0,
+            "347": 0,
+            "348": 0,
+            "349": 0,
+            "350": 0,
+            "351": 0,
+            "353": 0,
+            "354": 0,
+            "355": 0,
+            "356": 0,
+            "358": 0,
+            "360": 0,
+            "361": 0,
+            "362": 0,
+            "363": 0,
+            "364": 0,
+            "365": 0,
+            "366": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\ManagerServiceTests.cs": {
+      "LeaveManagement.Test.Services.ManagerServiceTests": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests::.ctor()": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<<DeleteManagerAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<<DeleteManagerAsync_ShouldThrowException_WhenDeleteFails>b__15_2>d::MoveNext()": {
+          "Lines": {
+            "330": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<>c": {
+        "System.Boolean LeaveManagement.Test.Services.ManagerServiceTests/<>c::<GetManagerAsync_ShouldReturnListOfManager>b__5_2(LeaveManagement.Application.DTO.ManagerDTO)": {
+          "Lines": {
+            "80": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass10_0/<<AddManagerAsync_ShouldThrowException_WhenAddingManagerFails>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass10_0/<<AddManagerAsync_ShouldThrowException_WhenAddingManagerFails>b__2>d::MoveNext()": {
+          "Lines": {
+            "203": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass11_0/<<AddManagerAsync_ShouldThrowException_WhenManagerAlreadyExists>b__2>d": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass11_0/<<AddManagerAsync_ShouldThrowException_WhenManagerAlreadyExists>b__2>d::MoveNext()": {
+          "Lines": {
+            "231": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass13_0/<<UpdateManagerAsync_ShouldThrowException_WhenManagerNotFound>b__1>d": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<>c__DisplayClass13_0/<<UpdateManagerAsync_ShouldThrowException_WhenManagerNotFound>b__1>d::MoveNext()": {
+          "Lines": {
+            "291": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldReturnAddedManager>d__9": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldReturnAddedManager>d__9::MoveNext()": {
+          "Lines": {
+            "144": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0,
+            "154": 0,
+            "155": 0,
+            "156": 0,
+            "157": 0,
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "170": 0,
+            "173": 0,
+            "174": 0,
+            "175": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldThrowException_WhenAddingManagerFails>d__10": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldThrowException_WhenAddingManagerFails>d__10::MoveNext()": {
+          "Lines": {
+            "179": 0,
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0,
+            "187": 0,
+            "188": 0,
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0,
+            "194": 0,
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "199": 0,
+            "200": 0,
+            "204": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldThrowException_WhenManagerAlreadyExists>d__11": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<AddManagerAsync_ShouldThrowException_WhenManagerAlreadyExists>d__11::MoveNext()": {
+          "Lines": {
+            "207": 0,
+            "209": 0,
+            "210": 0,
+            "211": 0,
+            "212": 0,
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "222": 0,
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "227": 0,
+            "228": 0,
+            "232": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<DeleteManagerAsync_ShouldReturnNoOfRowsAffected>d__14": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<DeleteManagerAsync_ShouldReturnNoOfRowsAffected>d__14::MoveNext()": {
+          "Lines": {
+            "296": 0,
+            "298": 0,
+            "299": 0,
+            "300": 0,
+            "301": 0,
+            "303": 0,
+            "304": 0,
+            "305": 0,
+            "307": 0,
+            "309": 0,
+            "310": 0,
+            "312": 0,
+            "313": 0,
+            "314": 0,
+            "315": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<DeleteManagerAsync_ShouldThrowException_WhenDeleteFails>d__15": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<DeleteManagerAsync_ShouldThrowException_WhenDeleteFails>d__15::MoveNext()": {
+          "Lines": {
+            "319": 0,
+            "321": 0,
+            "322": 0,
+            "323": 0,
+            "324": 0,
+            "326": 0,
+            "327": 0,
+            "331": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerAsync_ShouldReturnEmptyList_WhenNoManagerExist>d__6": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerAsync_ShouldReturnEmptyList_WhenNoManagerExist>d__6::MoveNext()": {
+          "Lines": {
+            "84": 0,
+            "86": 0,
+            "88": 0,
+            "91": 0,
+            "94": 0,
+            "95": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerAsync_ShouldReturnListOfManager>d__5": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerAsync_ShouldReturnListOfManager>d__5::MoveNext()": {
+          "Lines": {
+            "32": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0,
+            "56": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0,
+            "65": 0,
+            "66": 0,
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "75": 0,
+            "78": 0,
+            "79": 0,
+            "81": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerByIdAsync_ShouldReturnManager_WhenManagerExists>d__7": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerByIdAsync_ShouldReturnManager_WhenManagerExists>d__7::MoveNext()": {
+          "Lines": {
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "118": 0,
+            "119": 0,
+            "122": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerByIdAsyncc_ShouldReturnNull_WhenManagerDoesNotExist>d__8": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<GetManagerByIdAsyncc_ShouldReturnNull_WhenManagerDoesNotExist>d__8::MoveNext()": {
+          "Lines": {
+            "131": 0,
+            "133": 0,
+            "136": 0,
+            "139": 0,
+            "140": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<UpdateManagerAsync_ShouldReturnUpdatedManager>d__12": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<UpdateManagerAsync_ShouldReturnUpdatedManager>d__12::MoveNext()": {
+          "Lines": {
+            "236": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0,
+            "259": 0,
+            "262": 0,
+            "265": 0,
+            "266": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.ManagerServiceTests/<UpdateManagerAsync_ShouldThrowException_WhenManagerNotFound>d__13": {
+        "System.Void LeaveManagement.Test.Services.ManagerServiceTests/<UpdateManagerAsync_ShouldThrowException_WhenManagerNotFound>d__13::MoveNext()": {
+          "Lines": {
+            "274": 0,
+            "276": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0,
+            "282": 0,
+            "283": 0,
+            "284": 0,
+            "285": 0,
+            "286": 0,
+            "287": 0,
+            "288": 0,
+            "292": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\achu.nair\\Desktop\\DOTNET Training\\LeaveMangementSystem\\LeaveManagement.Test\\Services\\UserServiceTests.cs": {
+      "LeaveManagement.Test.Services.UserServiceTests": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests::.ctor()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.UserServiceTests/<AddUserAsync_ShouldReturnAddedUser>d__11": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests/<AddUserAsync_ShouldReturnAddedUser>d__11::MoveNext()": {
+          "Lines": {
+            "119": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "139": 0,
+            "142": 0,
+            "143": 0,
+            "145": 0,
+            "146": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.UserServiceTests/<DeleteEmployeeAsync_ShouldReturnNumberOfAffectedRows>d__10": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests/<DeleteEmployeeAsync_ShouldReturnNumberOfAffectedRows>d__10::MoveNext()": {
+          "Lines": {
+            "102": 0,
+            "104": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "111": 0,
+            "114": 0,
+            "115": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.UserServiceTests/<GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists>d__8": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests/<GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists>d__8::MoveNext()": {
+          "Lines": {
+            "64": 0,
+            "66": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0,
+            "73": 0,
+            "76": 0,
+            "77": 0,
+            "78": 0
+          },
+          "Branches": []
+        }
+      },
+      "LeaveManagement.Test.Services.UserServiceTests/<GetUsersAsync_ShouldReturnListOfUsers>d__7": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests/<GetUsersAsync_ShouldReturnListOfUsers>d__7::MoveNext()": {
+          "Lines": {
+            "37": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "54": 0,
+            "57": 0,
+            "58": 0,
+            "59": 0,
+            "60": 0
+          },
+          "Branches": [
+            {
+              "Line": 59,
+              "Offset": 580,
+              "EndOffset": 582,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 59,
+              "Offset": 580,
+              "EndOffset": 586,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      },
+      "LeaveManagement.Test.Services.UserServiceTests/<UpdateUserAsync_ShouldReturnUpdatedUser>d__9": {
+        "System.Void LeaveManagement.Test.Services.UserServiceTests/<UpdateUserAsync_ShouldReturnUpdatedUser>d__9::MoveNext()": {
+          "Lines": {
+            "82": 0,
+            "84": 0,
+            "85": 0,
+            "87": 0,
+            "88": 0,
+            "89": 0,
+            "90": 0,
+            "93": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
