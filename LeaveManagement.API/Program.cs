@@ -12,12 +12,10 @@ using System.Text;
 using LeaveManagement.Application.Validators;
 using FluentValidation.AspNetCore;
 
-
 DotNetEnv.Env.Load();
 
 var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
 var jwt_Scret = Environment.GetEnvironmentVariable("API_SECRET");
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,15 +28,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-//builder.Services.AddDbContext<ApplicationDbContext>((serviceProvider, options) =>
-//{
-//    options.UseSqlServer(connectionString);
-//});
-
-
-
+    options.UseSqlServer(connectionString));
 
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
@@ -65,7 +55,6 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddSwaggerGen(option =>
 
 {
-
     option.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description =
@@ -95,8 +84,6 @@ builder.Services.AddSwaggerGen(option =>
                         new List<string>()
                     }
                 });
-
-
 });
 
 builder.Services.AddAuthentication(x =>
@@ -114,7 +101,6 @@ builder.Services.AddAuthentication(x =>
             jwt_Scret)),
         ValidateIssuer = false,
         ValidateAudience = false
-
     };
 });
 

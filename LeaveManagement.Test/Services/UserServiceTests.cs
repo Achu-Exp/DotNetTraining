@@ -27,7 +27,7 @@ namespace LeaveManagement.Test.Services
             _mockMapper = new Mock<IMapper>();
             _mockUnitOfWork.Setup(e => e.User).Returns(_mockUserRepository.Object);
             _userService = new UserService(_mockUnitOfWork.Object, _mockMapper.Object, 
-                _mockEmployeeRepository.Object, _mockManagerRepository.Object);
+            _mockEmployeeRepository.Object, _mockManagerRepository.Object);
         }
 
         [Fact]

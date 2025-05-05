@@ -16,7 +16,6 @@ namespace LeaveManagement.Application.Services
         public EmailService(IConfiguration configuration)
         {
             this.configuration = configuration;
-
         }
         public async Task SendEmail(string receptor, string subject, string body)
         {
@@ -37,19 +36,21 @@ namespace LeaveManagement.Application.Services
 
             var host = configuration.GetValue<string>("EMAIL_CONFIGURATION:HOST");
             var port = configuration.GetValue<int>("EMAIL_CONFIGURATION:PORT");
-
-            var smtpClient = new SmtpClient(host, port);
-            smtpClient.EnableSsl = true;
-            smtpClient.UseDefaultCredentials = false;
-
             string email = Environment.GetEnvironmentVariable("EMAIL");
             string password = Environment.GetEnvironmentVariable("PASSWORD");
-            smtpClient.Credentials = new NetworkCredential(email, password);
 
-            var message = new MailMessage(email!, receptor, subject, body);
-            message.IsBodyHtml = true;
+            using var smtpClient = new SmtpClient(host, port)
+            {
+                EnableSsl = true,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential(email, password)
+            };
+
+            using var message = new MailMessage(email!, receptor, subject, body)
+            {
+                IsBodyHtml = true
+            };
             await smtpClient.SendMailAsync(message);
-
         }
     }
 }

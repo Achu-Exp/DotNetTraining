@@ -50,7 +50,6 @@ namespace LeaveManagement.Infrastructure.Repositories
                 ))
                 .FirstOrDefaultAsync();
         }
-
         public async Task<User> UpdateAsync(User user)
         {
             _context.Users.Update(user);

@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeaveManagement.Domains\LeaveManagement.Domain.csproj" />
+    <ProjectReference Include="..\LeaveManagement.Domains\LeaveManagementSystem.Domain.csproj" />
     <ProjectReference Include="..\LeaveManagementSystem.Database\LeaveManagementSystem.Database.sqlproj" />
   </ItemGroup>
 
