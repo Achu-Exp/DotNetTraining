@@ -147,7 +147,7 @@ namespace LeaveManagement.API.Controllers
             }
         }
 
-        [HttpGet("leavesbyapprover")]
+        [HttpGet("approverId")]
         public async Task<IActionResult> GetAllLeavesByApprover(int id)
         {
             try

@@ -22,6 +22,10 @@ namespace LeaveManagement.Application.Services
         public async Task<ManagerDTO> AddManagerByAsync(ManagerDTO manager)
         {
             var managerEntity = _mapper.Map<Entity.Manager>(manager);
+            if (managerEntity.User != null)
+            {
+                managerEntity.User.Password = "experion@123";
+            }
             await _managerRepository.AddAsync(managerEntity);
             await _unitOfWork.CompleteAsync();
             return _mapper.Map<DTO.ManagerDTO>(managerEntity);

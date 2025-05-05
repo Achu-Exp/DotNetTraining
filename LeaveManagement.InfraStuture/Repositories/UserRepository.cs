@@ -1,4 +1,5 @@
-﻿using LeaveManagement.Infrastructure.DataModel;
+﻿using LeaveManagement.Domain.Entities;
+using LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Infrastructure.Repositories
@@ -14,6 +15,7 @@ namespace LeaveManagement.Infrastructure.Repositories
 
         public async Task AddAsync(User user)
         {
+            user.Password = "experion@123";
             await _context.Users.AddAsync(user);
         }
 

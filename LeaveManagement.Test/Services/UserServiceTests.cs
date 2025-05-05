@@ -7,6 +7,9 @@ using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using Entity = LeaveManagement.Domain.Entities;
 using Moq;
 using Xunit;
+using LeaveManagement.Application.DTO;
+using LeaveManagement.Application.Services.Interfaces;
+using LeaveManagement.Domain.Entities;
 
 namespace LeaveManagement.Test.Services
 {
@@ -58,6 +61,21 @@ namespace LeaveManagement.Test.Services
         }
 
         [Fact]
+        public async Task GetUserAsync_ShouldReturnEmptyList_WhenNoUserExist()
+        {
+            // Arrange
+            var managers = new List<DataModel.UserData>();
+
+            _mockUserRepository.Setup(repo => repo.GetAllAsync()).ReturnsAsync(managers);
+
+            // Act
+            var result = await _userService.GetUsersAsync();
+
+            // Assert
+            Assert.Null(result);
+        }
+
+        [Fact]
         public async Task GetEmployeeByIdAsync_ShouldReturnEmployee_WhenEmployeeExists()
         {
             // Arrange
@@ -73,6 +91,20 @@ namespace LeaveManagement.Test.Services
             // Assert
             Assert.NotNull(result);
             Assert.Equal(1, result.Id);
+        }
+
+
+        [Fact]
+        public async Task GetUserByIdAsyncc_ShouldReturnNull_WhenUserDoesNotExist()
+        {
+            // Arrange
+            _mockUserRepository.Setup(repo => repo.GetByIdAsync(It.IsAny<int>())).ReturnsAsync((DataModel.UserData)null);
+
+            // Act
+            var result = await _userService.GetUserByIdAsync(999);
+
+            // Assert
+            Assert.Null(result);
         }
 
         [Fact]
@@ -96,6 +128,18 @@ namespace LeaveManagement.Test.Services
         }
 
         [Fact]
+        public async Task UpdateUserAsync_ShouldThrowException_WhenUserNotFound()
+        {
+            // Arrange
+            var userDto = new DTO.UserDTO { Id = 1, Name = "John Doe Updated" };
+
+            _mockUserRepository.Setup(repo => repo.UpdateAsync(It.IsAny<Entity.User>())).ThrowsAsync(new KeyNotFoundException("Department not found"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<KeyNotFoundException>(async () => await _userService.UpdateUserAsync(userDto));
+        }
+
+        [Fact]
         public async Task DeleteEmployeeAsync_ShouldReturnNumberOfAffectedRows()
         {
             // Arrange
@@ -111,5 +155,171 @@ namespace LeaveManagement.Test.Services
             // Assert
             Assert.Equal(1, result);
         }
+
+
+        [Fact]
+        public async Task DeleteUserAsync_ShouldThrowException_WhenDeleteFails()
+        {
+            var userEntity = new Entity.User { Id = 1, Name = "John Doe" };
+
+            _mockUserRepository.Setup(repo => repo.FindAsync(It.IsAny<int>())).ReturnsAsync(userEntity);
+            _mockUserRepository.Setup(repo => repo.DeleteAsync(It.IsAny<Entity.User>())).ThrowsAsync(new Exception("Delete operation failed"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<Exception>(async () => await _userService.DeleteUserAsync(1));
+        }
+
+        [Fact]
+        public async Task AddUserAsync_ShouldReturnAddedUser()
+        {
+       
+
+            var User = new DTO.UserDTO
+            {
+                Id = 1,
+                Name = "John Doe"
+            };
+
+            var UserEntity = new Entity.User
+            {
+                Name = "John Doe",
+            };
+
+            _mockMapper.Setup(m => m.Map<Entity.User>(User)).Returns(UserEntity);
+            _mockUserRepository.Setup(repo => repo.AddAsync(UserEntity)).Returns(Task.CompletedTask);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<DTO.UserDTO>(UserEntity)).Returns(User);
+
+            // Act
+            var result = await _userService.AddUserByAsync(User);
+
+            // Assert
+            Assert.NotNull(result);
+            Assert.Equal(1, result.Id);
+
+            _mockUnitOfWork.Verify(e => e.CompleteAsync(), Times.Once);
+        }
+
+        [Fact]
+        public async Task AddUserAsync_ShouldThrowException_WhenAddingUserFails()
+        {
+            // Arrange
+            var User = new DTO.UserDTO
+            {
+                Id = 1,
+                Name = "John Doe"
+            };
+
+            var UserEntity = new Entity.User
+            {
+                Name = "John Doe",
+            };
+
+            _mockMapper.Setup(m => m.Map<Entity.User>(User)).Returns(UserEntity);
+            _mockUserRepository.Setup(repo => repo.AddAsync(UserEntity)).ThrowsAsync(new Exception("Database error"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<Exception>(async () => await _userService.AddUserByAsync(User));
+        }
+        [Fact]
+        public async Task AddUserAsync_ShouldThrowException_WhenUserAlreadyExists()
+        {
+            // Arrange
+            var User = new DTO.UserDTO
+            {
+                Id = 1,
+                Name = "John Doe"
+            };
+
+            var UserEntity = new Entity.User
+            {
+                Name = "John Doe",
+            };
+
+            _mockMapper.Setup(m => m.Map<Entity.User>(User)).Returns(UserEntity);
+            _mockUserRepository.Setup(repo => repo.AddAsync(UserEntity)).ThrowsAsync(new InvalidOperationException("Department already exists"));
+
+            // Act & Assert
+            await Assert.ThrowsAsync<InvalidOperationException>(async () => await _userService.AddUserByAsync(User));
+        }
+
+        [Fact]
+        public async Task AddUserAsync_WithEmployeeRole_ShouldAddEmployee()
+        {
+            // Arrange
+            var userDto = new UserDTO
+            {
+                Id = 1,
+                Name = "John Doe",
+                Role = UserRole.Employee,
+                ManagerId = 5
+            };
+
+            var userEntity = new User { Name = "John Doe" };
+
+            _mockMapper.Setup(m => m.Map<User>(userDto)).Returns(userEntity);
+            _mockUserRepository.Setup(r => r.AddAsync(userEntity)).Returns(Task.CompletedTask);
+            _mockEmployeeRepository.Setup(r => r.AddAsync(It.IsAny<Employee>())).Returns(Task.CompletedTask);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<UserDTO>(userEntity)).Returns(userDto);
+
+            // Act
+            var result = await _userService.AddUserByAsync(userDto);
+
+            // Assert
+            Assert.Equal("John Doe", result.Name);
+            _mockEmployeeRepository.Verify(r => r.AddAsync(It.Is<Employee>(e => e.ManagerId == 5)), Times.Once);
+        }
+
+
+        [Fact]
+        public async Task AddUserAsync_WithManagerRole_ShouldAddManager()
+        {
+            // Arrange
+            var userDto = new UserDTO
+            {
+                Id = 1,
+                Name = "Jane Smith",
+                Role = UserRole.Manager
+            };
+
+            var userEntity = new User { Name = "Jane Smith" };
+
+            _mockMapper.Setup(m => m.Map<User>(userDto)).Returns(userEntity);
+            _mockUserRepository.Setup(r => r.AddAsync(userEntity)).Returns(Task.CompletedTask);
+            _mockManagerRepository.Setup(r => r.AddAsync(It.IsAny<Manager>())).Returns(Task.CompletedTask);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<UserDTO>(userEntity)).Returns(userDto);
+
+            // Act
+            var result = await _userService.AddUserByAsync(userDto);
+
+            // Assert
+            Assert.Equal("Jane Smith", result.Name);
+            _mockManagerRepository.Verify(r => r.AddAsync(It.IsAny<Manager>()), Times.Once);
+        }
+
+
+        [Fact]
+        public async Task AddUserAsync_ShouldSetDefaultPassword()
+        {
+            var userDto = new UserDTO { Name = "Default Pass", Role = UserRole.Employee };
+            var userEntity = new User { Name = "Default Pass" };
+
+            _mockMapper.Setup(m => m.Map<User>(userDto)).Returns(userEntity);
+            _mockUserRepository.Setup(r => r.AddAsync(It.IsAny<User>())).Callback<User>(u => userEntity = u).Returns(Task.CompletedTask);
+            _mockEmployeeRepository.Setup(r => r.AddAsync(It.IsAny<Employee>())).Returns(Task.CompletedTask);
+            _mockUnitOfWork.Setup(u => u.CompleteAsync()).ReturnsAsync(1);
+            _mockMapper.Setup(m => m.Map<UserDTO>(It.IsAny<User>())).Returns(userDto);
+
+            // Act
+            var result = await _userService.AddUserByAsync(userDto);
+
+            // Assert
+            Assert.Equal("experion@123", userEntity.Password);
+        }
+
+
+
     }
 }
