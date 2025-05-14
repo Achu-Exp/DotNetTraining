@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LeaveManagement.Application.DTO
+﻿namespace LeaveManagement.Application.DTO
 {
     public class DepartmentDTO
     {

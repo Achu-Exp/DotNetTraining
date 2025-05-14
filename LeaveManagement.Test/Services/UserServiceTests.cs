@@ -200,7 +200,6 @@ namespace LeaveManagement.Test.Services
             _mockUnitOfWork.Verify(e => e.CompleteAsync(), Times.Once);
         }
 
-
         [Fact]
         public async Task AddUserAsync_ShouldThrowException_WhenAddingUserFails()
         {

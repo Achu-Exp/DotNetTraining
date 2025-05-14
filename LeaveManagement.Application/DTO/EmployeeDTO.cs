@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace LeaveManagement.Application.DTO
+﻿namespace LeaveManagement.Application.DTO
 {
     public record EmployeeDTO
     {
