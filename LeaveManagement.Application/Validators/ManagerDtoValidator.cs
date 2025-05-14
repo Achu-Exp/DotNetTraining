@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
+using LeaveManagementSystem.Application.Validators;
 
 namespace LeaveManagement.Application.Validators
 {
@@ -13,7 +14,7 @@ namespace LeaveManagement.Application.Validators
         {
             RuleFor(manager => manager.User)
            .NotNull().WithMessage("User details are required.")
-           .SetValidator(new UserDtoValidator());
+           .SetValidator(new UsersDtoValidators());
         }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using LeaveManagementSystem.Application.Validators;
 
 namespace LeaveManagement.Application.Validators
 {
@@ -14,7 +15,7 @@ namespace LeaveManagement.Application.Validators
         {
             RuleFor(x => x.User)
                 .NotEmpty().WithMessage("User details are required")
-                .SetValidator(new UserDtoValidator());
+                .SetValidator(new UsersDtoValidators());
 
             RuleFor(x => x.ManagerId)
                 .GreaterThan(0).When(e => e.ManagerId.HasValue)

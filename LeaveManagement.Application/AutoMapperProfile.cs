@@ -31,6 +31,10 @@ namespace LeaveManagement.Application
 
             CreateMap<LoginRequestData, DTO.LoginRequestDTO>();
             CreateMap<DTO.LoginRequestDTO, LoginRequestData>().ReverseMap();
+
+            CreateMap<DTO.UsersDTO, Entity.User>().ReverseMap();
+            CreateMap<UserData, DTO.UsersDTO>().ReverseMap();
+
         }
     }
 }

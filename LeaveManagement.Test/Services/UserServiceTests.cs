@@ -172,7 +172,7 @@ namespace LeaveManagement.Test.Services
         [Fact]
         public async Task AddUserAsync_ShouldReturnAddedUser()
         {
-       
+
 
             var User = new DTO.UserDTO
             {
@@ -199,6 +199,7 @@ namespace LeaveManagement.Test.Services
 
             _mockUnitOfWork.Verify(e => e.CompleteAsync(), Times.Once);
         }
+
 
         [Fact]
         public async Task AddUserAsync_ShouldThrowException_WhenAddingUserFails()
