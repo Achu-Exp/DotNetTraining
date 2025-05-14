@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.Services;
-using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using Moq;

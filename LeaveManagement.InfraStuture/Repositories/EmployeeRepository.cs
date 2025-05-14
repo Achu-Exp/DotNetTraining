@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using LeaveManagement.Domain.Entities;
-using LeaveManagement.Infrastructure.DataModel;
+﻿using LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 namespace LeaveManagement.Infrastructure.Repositories

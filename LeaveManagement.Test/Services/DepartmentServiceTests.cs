@@ -1,13 +1,12 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.Services;
-using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
+using Moq;
+using Xunit;
 using DataModel = LeaveManagement.Infrastructure.DataModel;
 using DTO = LeaveManagement.Application.DTO;
 using Entity = LeaveManagement.Domain.Entities;
-using Moq;
-using Xunit;
 
 namespace LeaveManagement.Test.Services
 {

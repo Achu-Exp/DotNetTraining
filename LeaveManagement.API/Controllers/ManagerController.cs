@@ -1,5 +1,4 @@
-﻿using LeaveManagement.Application.Services;
-using LeaveManagement.Application.Services.Interfaces;
+﻿using LeaveManagement.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LeaveManagement.API.Controllers
