@@ -1,7 +1,4 @@
 ﻿using AutoMapper;
-using LeaveManagement.Application.DTO;
-using LeaveManagement.Domain.Entities;
-using Microsoft.AspNetCore.Identity;
 
 namespace LeaveManagement.Application
 {

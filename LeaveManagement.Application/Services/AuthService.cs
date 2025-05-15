@@ -1,12 +1,12 @@
-﻿using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
+﻿using AutoMapper;
 using System.Text;
-using AutoMapper;
+using System.Security.Claims;
+using Microsoft.IdentityModel.Tokens;
 using LeaveManagement.Application.DTO;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.Extensions.Configuration;
 using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 
 namespace LeaveManagement.Application.Services
 {
@@ -23,7 +23,6 @@ namespace LeaveManagement.Application.Services
             _authRepository = authRepository;
             _mapper = mapper;
             secretKey = Environment.GetEnvironmentVariable("API_SECRET");
-
         }
 
         public async Task<LoginResponseDTO> LoginUser(LoginRequestDTO loginRequest)
@@ -39,15 +38,12 @@ namespace LeaveManagement.Application.Services
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(secretKey);
 
-
             var claims = new List<Claim>
             {
                     new Claim(ClaimTypes.Email, user.Email),
                     new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                     new Claim(ClaimTypes.Role, role)
-
             };
-
 
             var tokenDescriptor = new SecurityTokenDescriptor()
             {
@@ -55,6 +51,7 @@ namespace LeaveManagement.Application.Services
                 Expires = DateTime.UtcNow.AddDays(1),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
             LoginResponseDTO loginResponseDTO = new()
             {
