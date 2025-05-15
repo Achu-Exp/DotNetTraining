@@ -16,10 +16,14 @@ using LeaveManagement.Infrastructure.Repositories.Interfaces;
 
 DotNetEnv.Env.Load();
 
-var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+//var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING");
+
 var jwt_Scret = Environment.GetEnvironmentVariable("API_SECRET");
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
 
 // Add services to the container.
 

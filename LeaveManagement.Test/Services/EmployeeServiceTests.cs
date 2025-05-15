@@ -49,7 +49,7 @@ namespace LeaveManagement.Test.Services
                 new DTO.EmployeeDTO
                 {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                    Id = 1,
                    Name = "John Doe",
@@ -63,7 +63,7 @@ namespace LeaveManagement.Test.Services
                 new DTO.EmployeeDTO
                 {
                 Id = 2,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                    Id = 2,
                    Name = "Aby Dan",
@@ -115,7 +115,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -157,7 +157,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -195,7 +195,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -225,7 +225,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -257,7 +257,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "Jane Doe",
@@ -342,7 +342,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 2,
                     Name = "John Doe updated",
@@ -379,7 +379,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 2,
                     Name = "John Doe updated",
@@ -403,7 +403,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.EmployeeDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -466,7 +466,7 @@ namespace LeaveManagement.Test.Services
                 new EmployeeDTO
                 {
                     Id = 1,
-                    User = new UserDTO
+                    User = new UsersDTO
                     {
                         Id = 1,
                         Name = "John Doe",
@@ -533,7 +533,7 @@ namespace LeaveManagement.Test.Services
                 new EmployeeDTO
                 {
                     Id = 1,
-                    User = new UserDTO
+                    User = new UsersDTO
                     {
                         Id = 1,
                         Name = "John Doe",
@@ -546,7 +546,7 @@ namespace LeaveManagement.Test.Services
                 new EmployeeDTO
                 {
                     Id = 2,
-                    User = new UserDTO
+                    User = new UsersDTO
                     {
                         Id = 2,
                         Name = "Aby Dan",

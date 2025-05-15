@@ -31,28 +31,43 @@ namespace LeaveManagement.Application.Services
             userEntity.Password = "experion@123";
 
             await _userRepository.AddAsync(userEntity);
-
-            if (userDto.Role == UserRole.Employee)
-            {
-                var employee = new Employee
-                {
-                    User = userEntity,
-                    ManagerId = userDto.ManagerId
-                };
-                await _employeeRepository.AddAsync(employee);
-            }
-            else if (userDto.Role == UserRole.Manager)
-            {
-                var manager = new Manager
-                {
-                    User = userEntity
-                };
-                await _managerRepository.AddAsync(manager);
-            }
-
             await _unitOfWork.CompleteAsync();
-            return _mapper.Map<UserDTO>(userEntity);
+
+            switch (userDto.Role)
+            {
+                case UserRole.Employee:
+                    var employee = new Employee
+                    {
+                        UserId = userEntity.Id,
+                        ManagerId = userDto.ManagerId
+                    };
+                    await _employeeRepository.AddAsync(employee);
+                    await _unitOfWork.CompleteAsync();
+
+                    var employeeDto = _mapper.Map<UserDTO>(userEntity);
+                    employeeDto.Role = UserRole.Employee;
+                    employeeDto.ManagerId = userDto.ManagerId;
+                    return employeeDto;
+
+                case UserRole.Manager:
+                    var manager = new Manager
+                    {
+                        UserId = userEntity.Id
+                    };
+                    await _managerRepository.AddAsync(manager);
+                    await _unitOfWork.CompleteAsync();
+
+                    var managerDto = _mapper.Map<UserDTO>(userEntity);
+                    managerDto.Role = UserRole.Manager;
+                    return managerDto;
+
+                default:
+                    var defaultDto = _mapper.Map<UserDTO>(userEntity);
+                    defaultDto.Role = UserRole.User;
+                    return defaultDto;
+            }
         }
+
 
 
         public async Task<UserDTO> GetUserByIdAsync(int id)

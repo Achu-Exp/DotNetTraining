@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using LeaveManagement.Application.Services;
-using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
 using Moq;
@@ -46,7 +45,7 @@ namespace LeaveManagement.Test.Services
                 new DTO.ManagerDTO
                 {
                     Id = 1,
-                    User = new DTO.UserDTO
+                    User = new DTO.UsersDTO
                     {
                         Id = 1,
                         Name = "John",
@@ -58,7 +57,7 @@ namespace LeaveManagement.Test.Services
                 new DTO.ManagerDTO
                 {
                     Id = 2,
-                    User = new DTO.UserDTO
+                    User = new DTO.UsersDTO
                     {
                         Id = 1,
                         Name = "James",
@@ -106,7 +105,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",
@@ -147,7 +146,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",
@@ -182,7 +181,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",
@@ -210,7 +209,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",
@@ -240,7 +239,7 @@ namespace LeaveManagement.Test.Services
             var employeeDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "Jane Doe",
@@ -318,7 +317,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",
@@ -356,7 +355,7 @@ namespace LeaveManagement.Test.Services
             var managerDto = new DTO.ManagerDTO
             {
                 Id = 1,
-                User = new DTO.UserDTO
+                User = new DTO.UsersDTO
                 {
                     Id = 1,
                     Name = "John",

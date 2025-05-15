@@ -21,10 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LeaveManagement.Application\LeaveManagement.Application.csproj" />
     <ProjectReference Include="..\LeaveManagement.Application\LeaveManagementSystem.Application.csproj" />
-    <ProjectReference Include="..\LeaveManagement.Domains\LeaveManagement.Domain.csproj" />
-    <ProjectReference Include="..\LeaveManagement.InfraStuture\LeaveManagement.Infrastructure.csproj" />
+    <ProjectReference Include="..\LeaveManagement.Application\LeaveManagementSystem.Application.csproj" />
+    <ProjectReference Include="..\LeaveManagement.Domains\LeaveManagementSystem.Domain.csproj" />
+    <ProjectReference Include="..\LeaveManagement.InfraStuture\LeaveManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

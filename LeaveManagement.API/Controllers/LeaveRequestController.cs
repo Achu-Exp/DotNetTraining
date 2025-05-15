@@ -1,5 +1,4 @@
-﻿using LeaveManagement.Application.Services;
-using LeaveManagement.Application.Services.Interfaces;
+﻿using LeaveManagement.Application.Services.Interfaces;
 using LeaveManagement.Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

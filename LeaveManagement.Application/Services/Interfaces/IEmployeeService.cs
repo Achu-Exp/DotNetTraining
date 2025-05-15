@@ -1,6 +1,4 @@
-﻿using LeaveManagement.Application.DTO;
-
-namespace LeaveManagement.Application.Services.Interfaces
+﻿namespace LeaveManagement.Application.Services.Interfaces
 {
     public interface IEmployeeService
     {

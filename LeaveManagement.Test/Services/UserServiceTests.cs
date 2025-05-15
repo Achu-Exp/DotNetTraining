@@ -1,15 +1,14 @@
 ﻿using AutoMapper;
+using LeaveManagement.Application.DTO;
 using LeaveManagement.Application.Services;
-using DTO = LeaveManagement.Application.DTO;
+using LeaveManagement.Domain.Entities;
 using LeaveManagement.Infrastructure;
-using DataModel = LeaveManagement.Infrastructure.DataModel;
 using LeaveManagement.Infrastructure.Repositories.Interfaces;
-using Entity = LeaveManagement.Domain.Entities;
 using Moq;
 using Xunit;
-using LeaveManagement.Application.DTO;
-using LeaveManagement.Application.Services.Interfaces;
-using LeaveManagement.Domain.Entities;
+using DataModel = LeaveManagement.Infrastructure.DataModel;
+using DTO = LeaveManagement.Application.DTO;
+using Entity = LeaveManagement.Domain.Entities;
 
 namespace LeaveManagement.Test.Services
 {
@@ -172,7 +171,7 @@ namespace LeaveManagement.Test.Services
         [Fact]
         public async Task AddUserAsync_ShouldReturnAddedUser()
         {
-       
+
 
             var User = new DTO.UserDTO
             {
